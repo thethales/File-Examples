@@ -10,8 +10,6 @@ A compendium of links for sample files troughout the internet.
 
 ## Categories 
 
-### .vscode 
-  * [settings.json](<.vscode/settings.json>) 
 ### DOC 
   * [DOC_LoremIpsum_OnePage.docx](<DOC/DOC_LoremIpsum_OnePage.docx>) 
 ### EPUB 
