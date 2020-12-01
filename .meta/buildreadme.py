@@ -3,21 +3,15 @@ import os
 import shutil 
 import json
 
-
 def main():
-
     source      = ".META/readmebasefile.md"
     destination = "README.md"
-
     dest = shutil.copyfile(source, destination) 
-    
-    #addCategorias()
     addItens()
 
 
 def addCategorias():
-    arr_ignore = ['.git','.meta']
-    
+    arr_ignore = ['.git','.meta','.vscode']
     folders = [f for f in os.listdir('.') if os.path.isdir(f)]
     
     f = open("README.md", "a")
@@ -37,7 +31,7 @@ def addItens():
     
     for category in diretorio:
         if (category not in arr_ignore):
-            diretorioFiles = os.listdir('./'+category+'/') 
+            diretorioFiles = os.listdir('./'+category+'/')           
             jFolder[category] = diretorioFiles
 
     #Keeps a copy of the JSON on the directory
@@ -54,13 +48,14 @@ def addItens():
     for category in jFolder:
         f.write(mdHeader3(category))
         for categoryFile in jFolder[category]:
+            fpath = os.path.abspath(category + '/' + categoryFile)
             f.write(mdBullet2Link(categoryFile,category + '/' + categoryFile))
-    
-    
-    
-    
+
     f.close()
     return;
+
+
+
 
 def mdHeader2(desc):
     return "## " + desc.replace('.md','') + ' \n';
