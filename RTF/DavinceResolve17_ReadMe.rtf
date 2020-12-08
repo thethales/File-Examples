@@ -1,0 +1,299 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 HelveticaNeue;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\ri716\b\f0\fs40\lang22 About DaVinci Resolve 17\b0\fs22\par
+\par
+The free DaVinci Resolve 17 includes all of the same high quality processing as DaVinci Resolve 17 Studio and can handle unlimited resolution media files. However it does limit project mastering and output to Ultra HD resolutions or lower. DaVinci Resolve 17 only supports a single processing GPU on Windows and Linux and 2 GPUs on the latest Mac Pro. \par
+\par
+If you need features such as support for multiple GPUs, 4K output, motion blur effects, temporal and spatial noise reduction, de-interlacing, HDR tools, camera tracker, multiple Resolve FX, 3D stereoscopic tools, remote rendering, an external database server and collaboration tools that let multiple users work on the same project at the same time, please upgrade to DaVinci Resolve 17 Studio. \par
+\par
+We hope you do decide to upgrade as your facility grows and you do more advanced work!\par
+\par
+\b\i\fs28 Important information regarding database management\b0\i0\fs22\par
+\par
+DaVinci Resolve 17.0 requires a database upgrade from DaVinci Resolve 16.2.7 and previous versions. We strongly recommend that you back up your existing database (both DiskDB and PostgreSQL) before performing an upgrade. \par
+\par
+\b\fs28 What's new in DaVinci Resolve 17.0\fs24\par
+
+\pard\ri1530\b0\fs22\par
+\b\fs28 Color\b0\fs22\par
+\bullet  DaVinci Resolve Advanced Panel keycaps kit and new optimized menus.\par
+\bullet  RCM2 with improved color tagging and smooth tone and gamut mapping.\par
+\bullet  HDR perceptually accurate primary grading tools with tonal range control.\par
+\bullet  Color warper to qualify and change hue vs saturation and luma vs chroma.\par
+\bullet  Magic mask using the DaVinci neural engine generates tracking masks.\par
+\bullet  Redesigned primary interface to show all controls concurrently.\par
+\bullet  Grading tools are colorspace aware in color managed timelines.\par
+\bullet  Support for user selectable colorspace and gamma for HDR grading tools.\par
+\bullet  Support for timeline clips to bypass color management.\par
+\bullet  Support for sat vs lum mode in the curve tool.\par
+\bullet  Support for generating a 17-point cube 3D LUT.\par
+\bullet  Support for LUTs designed for video range.\par
+\bullet  Support for saving smart filters to be shown in all projects.\par
+\bullet  Support for smart filters for marker keywords added to timeline clips.\par
+\bullet  Support for diagonal, venetian blinds and checkerboard reference wipes.\par
+\bullet  Support to set input colorspace, gamma and IDT on preconform timelines.\par
+\bullet  Support for a pop-out floating window for the curves panel.\par
+\bullet  Support for fast review from the playback menu on the color page.\par
+\bullet  Support for a 3x3 grid view and multiple GPU scopes of the same type.\par
+\bullet  Support for a floating video scopes window in dual screen layouts.\par
+\bullet  Improved scaling and style options for waveforms and vectorscopes.\par
+\bullet  Support for loading IDTs and ODTs as a DCTL file or ACES RRT.\par
+\bullet  Support for defining LUTs inside a DCTL file.\par
+\bullet  Support for multiple simultaneous client connections in remote grading.\par
+\bullet  Support for advanced and mini panels networking for remote grading.\par
+\bullet  Support for a split screen playhead viewing mode.\par
+\bullet  Support for improved split screen layouts.\par
+\bullet  Support for converting in-out ranges to duration markers.\par
+\bullet  Improved behavior when drawing bezier power windows using a mouse.\par
+\bullet  Option to use a Rec.2020 matrix for 4:2:2 video monitoring.\par
+\par
+\b\fs28 Resolve FX\b0\fs22\par
+\bullet  Resolve FX Smear frame blending for motion blur and other effects.\par
+\bullet  Resolve FX Motion Trails temporal motion blur, object trails, disco effects.\par
+\bullet  Resolve FX Transform clip moving, stretching and rotation with motion blur.\par
+\bullet  Resolve FX False Color overlays replicating camera HUDs and other looks.\par
+\bullet  Resolve FX Texture Pop for fine image detail and contrast control.\par
+\bullet  Resolve FX Detail Recovery for detail and grain recovery.\par
+\bullet  Resolve FX Noise Reduction native noise reduction tools as Resolve FX.\par
+\bullet  Resolve FX Video Collage to quickly position a stack of clips into a grid.\par
+\bullet  Resolve FX Luma, HSL and 3D native keying tools as Resolve FX.\par
+\bullet  Improved Resolve FX Film Grain with new optimized mode.\par
+\bullet  Improved Resolve FX Dead Pixel Fixer with freehand fill, softness etc.\par
+\bullet  Improved Resolve FX Dust Buster with shape drawing, clone fixes etc.\par
+\bullet  Improved Resolve FX Object Removal for scene mode, adaptive blending.\par
+\bullet  Improved Resolve FX Blur defaults for directional, radial and zoom blurs.\par
+\bullet  Improved Resolve FX Tilt Shift with alpha channel support for depth masks.\par
+\par
+\b\fs28 Audio\b0\fs22\par
+\bullet  Support for the Fairlight Mini Console.\par
+\bullet  Fairlight Audio Core to natively CPU process up to 2000 audio tracks.\par
+\bullet  FlexBus routing system to permit bus to bus routing and mixing.\par
+\bullet  ADM import, playback and export of Dolby Atmos IMF IAB masters.\par
+\bullet  Fairlight FX Surround Analyzer meters.\par
+\bullet  Full implementation of the 9.1.6 and 22.2 surround sound bus formats.\par
+\bullet  Native support for 44.1 KHz sample rate audio clips and instruments.\par
+\bullet  Analyzing and navigating to audio transients in a track.\par
+\bullet  Offline clip-based audio loudness analyzer.\par
+\bullet  Selection of absolute or relative scales and loudness meter dialog gating.\par
+\bullet  Pro Tools keyboard customization preset.\par
+\bullet  Full range of video controls in the new unified and tabbed inspector.\par
+\bullet  Updated editing, range and selection behavior in edit selection mode.\par
+\bullet  Support for importing AES31 audio timelines.\par
+\bullet  Support for pre-viewing video when sliding clips, markers and ranges.\par
+\bullet  Support for reversing audio clips.\par
+\bullet  Support for flattening audio track layers.\par
+\bullet  Support to have automation following clip edit changes.\par
+\bullet  Support for saving, recalling, creating timelines via configuration presets.\par
+\bullet  Support for editing linked clips.\par
+\bullet  Support for marquee selection of multiple mixer tracks.\par
+\bullet  Support for changing the track type of multiple selected tracks.\par
+\bullet  Support to directly edit in the mixer track and VCA group names.\par
+\bullet  Support for deleting multiple empty tracks from the track header.\par
+\bullet  Support for deleting marked extents on selected tracks.\par
+\bullet  Support for per-timeline views, selections, range and playhead location.\par
+\bullet  Support for changing clip gain using shortcuts.\par
+\bullet  Improved clip gain with change tooltips and fine control using shift.\par
+\bullet  Support for bouncing linked groups to a multi channel file.\par
+\bullet  Support for track record, mute, solo, arm control in the application menu.\par
+\bullet  Support for viewer to be off, floating, docked or full screen.\par
+\bullet  Support for toggling interface between normal and cinema viewer mode.\par
+\bullet  Support for monitoring volume dB level tooltip.\par
+\bullet  Support for selecting multiple monitor sources from Fairlight audio editors.\par
+\bullet  Support for pre & post roll control from the Fairlight audio editors.\par
+\bullet  Support for selection of Fairlight Audio Interface phantom power, gain etc.\par
+\bullet  Improved waveform display when zooming into a clip waveform.\par
+\bullet  Improved metering displays for timelines with lots of audio tracks.\par
+\bullet  Improved keyboard mappings for edit selection mode.\par
+\bullet  Improved MPEG-H workflow and export support.\par
+\par
+\b\fs28 Cut\b0\fs22\par
+\bullet  Support for the DaVinci Resolve Speed Editor.\par
+\bullet  Full featured unified inspector with tabs and keyframe control.\par
+\bullet  File tab in the inspector with camera raw settings and clip metadata.\par
+\bullet  Media pool clip properties can now be viewed and edited in the inspector.\par
+\bullet  Media pool slate and sort view with grouping based on clip metadata.\par
+\bullet  Audio trim on the viewer and timeline.\par
+\bullet  Live scrubbing previews for effects library transitions, titles and effects.\par
+\bullet  Support for a new relink icon and dialog in the cut page.\par
+\bullet  Support quickly switching source tape bins from the media pool.\par
+\bullet  Support for showing the media pool in a flattened view.\par
+\bullet  Playhead indicators for distance to adjacent edits when using sync bins.\par
+\bullet  Support for a change duration dialog with presets in the cut page.\par
+\bullet  Support for entering the clip duration in the viewer duration field.\par
+\bullet  Support for navigating edit points and markers in the cut page.\par
+\bullet  Support for a thumbnail view in the effects library.\par
+\bullet  Support for a full screen preview icon on the viewer.\par
+\bullet  Support for selecting safe area guides and aspect ratios on the cut page.\par
+\bullet  Support for a cinema viewer with sync bin multi-views.\par
+\bullet  Support for switching timelines in the viewer.\par
+\bullet  Support for importing frame sequences as individual still images.\par
+\bullet  Improved markers entry using the DaVinci Resolve Editor keyboard.\par
+\par
+\b\fs28 Edit\b0\fs22\par
+\bullet  Full featured unified inspector with tabs and keyframe control.\par
+\bullet  File tab in the inspector with camera raw settings and clip metadata.\par
+\bullet  Media pool clip properties can now be viewed and edited in the inspector.\par
+\bullet  Significantly improved DaVinci neural engine deinterlacing quality option.\par
+\bullet  Significantly improved processing of interlaced timelines and deliveries.\par
+\bullet  Real time removal of 3:2 pull down.\par
+\bullet  Scene cut detection directly on the timeline using DaVinci neural engine.\par
+\bullet  Automatically framing shots based on content using DaVinci neural engine.\par
+\bullet  Quick and clean chroma keying with Resolve FX Luma, HSL and 3D Keyer.\par
+\bullet  Resolve FX Video Collage for multiple source picture in picture grid.\par
+\bullet  Burn away transition with options to control burning, melting and shriveling.\par
+\bullet  Sync of multiple audio clips to a single video clip.\par
+\bullet  Aligning edits on the timeline using waveform or timecode matching.\par
+\bullet  Importing BorisFX Continuum plugins, transitions etc. from AAFs.\par
+\bullet  Live scrubbing previews for effects library transitions, titles and effects.\par
+\bullet  Media pool slate and sort view with grouping based on clip metadata.\par
+\bullet  Deleting gaps based on clip selection, ranges or the whole timeline.\par
+\bullet  Support for rendering sections of the timeline in place with effects baked in.\par
+\bullet  Support for motion blur controls for motion based video transitions.\par
+\bullet  Support for dragging effects directly into the inspector.\par
+\bullet  Support for conversion of basic transitions into Fusion transitions.\par
+\bullet  Support for timeline compositing using Resolve FX & OpenFX alpha.\par
+\bullet  Support to retain image position in the crop section of the inspector.\par
+\bullet  Support to navigate the timeline with arrow keys without affecting selection.\par
+\bullet  Support to change clip selection using arrow keys and command modifier.\par
+\bullet  Support for a thumbnail view in the effects library.\par
+\bullet  Support for sorting timelines alphabetically, creation date or recent use.\par
+\bullet  Support for disabling timelines within the media pool.\par
+\bullet  Improved timecode entry with multiple modes and dedicated action.\par
+\bullet  Support for copy paste of timecode or frame in viewers based on mode.\par
+\bullet  Support for compositing using track mattes or external alpha.\par
+\bullet  Support for Fusion effect templates in the edit page.\par
+\bullet  Support for viewer overlays for Fusion templates and titles.\par
+\bullet  Support to save and show smart bins in all projects.\par
+\bullet  Support for creating multiple multicam clips by splitting at gaps.\par
+\bullet  Support for compound clip or timeline conversion into multicam clips.\par
+\bullet  Support to optionally zoom timeline at the cursor or the playhead.\par
+\bullet  Support for a fast play review from the playback menu.\par
+\bullet  Support for hovering on title font names to preview on viewer.\par
+\bullet  Support for monitoring HDR and SDR outputs for Dolby Vision projects.\par
+\bullet  Support for monitoring stereoscopic 3D timelines.\par
+\bullet  Support for creating DCTL based transitions.\par
+\bullet  Support for importing EDL, XML etc. without media to empty media pool.\par
+\bullet  Support for floating video scopes in media view in a dual monitor mode.\par
+\bullet  Support for closing take selector or retime using escape.\par
+\bullet  Support for creating a new timeline using an IMF composition playlist.\par
+\bullet  Improved behavior when switching between clip and edit point selections.\par
+\bullet  Improved waveform syncing when creating multicams or aligning clips.\par
+\bullet  Improved track compositing when the media doesn't cover the full canvas.\par
+\bullet  Support for independent track height and view mode options.\par
+\par
+\b\fs28 Fusion\b0\fs22\par
+\bullet  Audio playback along with waveform display in the keyframes panel.\par
+\bullet  Viewing and editing clip and timeline markers in the keyframes panel.\par
+\bullet  Resolve FX Dead Pixel Fixer, DCTL and Patch Replacer.\par
+\bullet  Support for bookmarks to switch between different views in the node editor.\par
+\bullet  Anim curves modifier for convenient easing and shaping of animations.\par
+\bullet  Support for user customization of the Fusion toolbar above the node editor.\par
+\bullet  Support for auto creating a composition when adding tools or media.\par
+\bullet  Support for additional dual screen layouts.\par
+\bullet  Support for full featured unified inspector with tabs and keyframe control.\par
+\bullet  Initial support for a GPU accelerated 2D shapes toolkit for motion graphics.\par
+\bullet  Improved optical flow behavior.\par
+\par
+\b\fs28 Workflow Integrations\b0\fs22\par
+\bullet  Open toolkit to create DaVinci Resolve Studio workflow integration plugins.\par
+\par
+\b\fs28 Codecs\b0\fs22\par
+\bullet  Directly uploading to Twitter from within DaVinci Resolve.\par
+\bullet  Per frame metadata from Blackmagic RAW clips.\par
+\bullet  Per frame metadata from ARRI, RED, Canon and Sony cameras.\par
+\bullet  Decoding and rendering per-frame EXR metadata.\par
+\bullet  Updated metadata support for Sony MXF clips.\par
+\bullet  Open plugin SDK toolkit for encoder developers.\par
+\bullet  Growing file support in the media pool.\par
+\bullet  Decoding QuickTime PNG clips.\par
+\bullet  Decoding uncompressed RGB 8-bit and YUV 10-bit AVI clips.\par
+\bullet  Decoding spanned Panasonic 8K SHV clips.\par
+\bullet  Decoding and encoding GoPro CineForm clips with non multiple of 16 res.\par
+\bullet  Decoding and encoding mp3 audio in Linux.\par
+\bullet  Decoding and encoding high-throughput JPEG 2000 (HTJ2K).\par
+\bullet  Bypass re-encodes for supported JPEG 2000 profiles on renders.\par
+\bullet  Encoding IMF MCA audio metadata.\par
+\bullet  Encoding IMF and DCP as reels based on duration or edits.\par
+\bullet  Exporting non-HDR DCP metadata option.\par
+\bullet  Exporting HDR tags in DCP workflows.\par
+\bullet  Support for reading RAW clips and audio clips from Frame.io.\par
+\bullet  Support for additional NVIDIA encoder parameters for H.264 and H.265.\par
+\bullet  Support for rendering 10-bit HDR IMF clips.\par
+\bullet  Support for a 16 bit SDR IMF preset.\par
+\bullet  Support for Photon 4.8.0 for IMF validation.\par
+\par
+\b\fs28 General\b0\fs22\par
+\bullet  Proxy media workflow supporting internal and externally generated media.\par
+\bullet  Optimized media is now automatically available across projects.\par
+\bullet  Generation of optimized media can now be limited to edit extents.\par
+\bullet  In and out ranges are now synchronized between pages.\par
+\bullet  Significantly improved performance with large collaboration projects.\par
+\bullet  Stability improvements with new GPU detection and initialization.\par
+\bullet  Better interactivity and playback performance on multi-GPU systems.\par
+\bullet  Consistent pan, zoom and scroll behavior with mouse and trackpads.\par
+\bullet  Support for importing and exporting individual timelines using .drt files.\par
+\bullet  Support for importing and exporting individual bins using .drb files.\par
+\bullet  Support for exporting .drt files for media managed timelines.\par
+\bullet  Support for auto linking .drt files to source camera clips.\par
+\bullet  Support for auto linking .drt files generated using media management.\par
+\bullet  Improved error handling for media management jobs.\par
+\bullet  Support for a warning about media offline when creating render jobs.\par
+\bullet  Support for smart bins and smart filters to check if media is offline.\par
+\bullet  Support to scan all connected databases for remote rendering jobs.\par
+\bullet  Support for new resize filter options in project settings and edit inspector.\par
+\bullet  Support for render caching adjustment clips.\par
+\bullet  Support to adjust numeric field entries using arrow keys based on cursor.\par
+\bullet  Support to ignore unsupported OpenFX plugin packages in preferences.\par
+\bullet  Support for independently configuring capture and playback devices.\par
+\bullet  Support for displaying source frame number in data burn-in.\par
+\bullet  Support for adjusting text opacity for data burn-in.\par
+\bullet  Support for configuring multiple custom LUT paths.\par
+\bullet  Support for Thai & Vietnamese UI localizations.\par
+\bullet  Support for a render codec tag for render path and file name.\par
+\bullet  Support for ITU-R BT.2111-1 HDR test bar patterns.\par
+\bullet  Support for showing fast forward & rewind speed.\par
+\bullet  Support for NVLink high speed interconnect with supported NVIDIA GPUs.\par
+\bullet  Support for xGMI high speed interconnect with supported AMD GPUs.\par
+\bullet  Support for an integrated title bar in the application window on Mac OS.\par
+\bullet  Support for previous and next navigation across Frame.io markers.\par
+\bullet  Support for triggering a script at the start or end of a render.\par
+\bullet  Multiple scripting API improvements.\par
+\bullet  Multiple performance and stability improvements.\par
+\par
+
+\pard\ri716\b\i\fs28\page Minimum system requirements\b0\i0\fs22\par
+\par
+
+\pard\fi-210\li210\ri380\tx220\tx720\bullet  Windows 10 Creators Update.\par
+\bullet  16 GB of system memory. 32 GB when using Fusion.\par
+\bullet  Blackmagic Design Desktop Video 10.4.1 or later.\par
+\bullet  Integrated GPU or discrete GPU with at least 2 GB of VRAM.\par
+\bullet  GPU which supports OpenCL 1.2 or CUDA 11.\par
+\bullet  NVIDIA/AMD/Intel GPU Driver version \endash  as required by your GPU.\par
+\bullet  A minimum NVIDIA driver version of 451.82 is recommended.\par
+
+\pard\ri380\par
+\b\i\fs28 Installing DaVinci Resolve software\b0\i0\fs22\par
+\par
+Double-click the DaVinci Resolve Installer icon and follow the onscreen instructions. To remove DaVinci Resolve from your system, go to the Programs and Features control panel, select DaVinci Resolve, click on Uninstall and follow the onscreen prompts.\par
+\par
+\b\i\fs28 Migrating legacy Fairlight projects to DaVinci Resolve\b0\i0\fs22\par
+\par
+In order to import legacy Fairlight DR2 projects into DaVinci Resolve, download and install the following utility on your Windows system:\par
+{\ulc1{\field{\*\fldinst{HYPERLINK https://downloads.blackmagicdesign.com/DaVinciResolve/Fairlight-Project-Importer.zip }}{\fldrslt{https://downloads.blackmagicdesign.com/DaVinciResolve/Fairlight-Project-Importer.zip\ul0\cf0}}}}\f0\fs22\par
+\par
+After installing the utility, you should see an option to "Import Fairlight Project" in the Fairlight menu in DaVinci Resolve.\par
+\par
+\b\i\fs28 Additional information\b0\i0\fs22\par
+\par
+Please refer to the latest DaVinci Resolve configuration guide for details on Windows support, including certified driver versions for third party hardware. It is available from {{\field{\*\fldinst{HYPERLINK "https://www.blackmagicdesign.com/support/"}}{\fldrslt{\ul\cf1\cf1\ulc1\ul www.blackmagicdesign.com/support/}}}}\f0\fs22 .\par
+\par
+You will also need to download and install the latest Blackmagic Design Desktop Video software for monitoring with your Blackmagic Design video hardware. Desktop Video is available from {{\field{\*\fldinst{HYPERLINK "https://www.blackmagicdesign.com/support/"}}{\fldrslt{\ul\cf1\cf1\ulc1\ul www.blackmagicdesign.com/support/}}}}\f0\fs22 .\par
+\par
+
+\pard\ri716\fs18\'a9 2001-2020 Blackmagic Design Pty. Ltd. All rights reserved. Blackmagic Design, Blackmagic, DeckLink, Multibridge, Intensity, H.264 Pro Recorder and "Leading the creative video revolution" are trademarks of Blackmagic Design Pty. Ltd., registered in the U.S.A and other countries. Adobe Premiere Pro, Adobe After Effects and Adobe Photoshop are registered trademarks of Adobe Systems. Avid Media Composer and Avid Pro Tools are registered trademarks of Avid. Apple Final Cut Pro, Apple Motion and Apple Soundtrack Pro are registered trademarks of Apple Computer.\par
+\par
+Updated November 9, 2020.\fs22\par
+}
+ 
