@@ -1,5 +1,7 @@
 # File-Examples
 
+![Files Examples Horizontal](meta-files/img/logo_fileexamples.jpg)
+
 This repository can be defined as:
 - A collection of file examples of different formats.
 - Samples of files and structures for everyday use.
@@ -9,6 +11,7 @@ The general ideia, is providing material for those situations in software develo
 
 A experimental webpage is avaliable at: https://thethales.github.io/File-Examples/
 
+# Summary
 
 ## Documents
 
