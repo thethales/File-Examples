@@ -15,6 +15,15 @@ A experimental webpage is avaliable at: https://thethales.github.io/File-Example
 # Summary
 
 
+## 3D Modeling
+
+### BLEND | BLENDER
+
+```.blend``` is the dafult file system for [Blender](https://www.blender.org/) and can pack multiple scenes into a single file.
+
+- [cube.blend](BLEND/cube.blend) a simple 535kb file containing the default blender objet, _the cube_
+
+
 ## Configuration Files
 
 ### INF
