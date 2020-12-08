@@ -14,6 +14,38 @@ A experimental webpage is avaliable at: https://thethales.github.io/File-Example
 
 # Summary
 
+
+## Configuration Files
+
+### INF
+
+```.inf``` or Setup Information file is a plain-text file used by Microsoft Windows for the installation of software and drivers.
+
+- ```autorun.inf``` is a common file found in CD-ROMs for describing the procedures to auto launch the CD contents : [autorun.inf](INF/autorun.inf)
+  
+
+### INI
+
+```.ini``` files are used by applications and the Windows operating system for storing initialization parameters. The information is stored in associative arrays, with a key and a value, as such:
+
+```
+[section]
+name=value
+; comment text
+```
+Avaliable ```.ini``` samples:
+
+- [Desktop.ini](INI/windows-desktop.ini) 
+- [setup.ini](INI/setup.ini) 
+
+
+### VersionInfo
+
+```VersionInfo```  is a text file used by windows 32bit applications that contains version information. This information is language and code page independent. And mostly describes the product, author, release, copyright, iternal names, among many others attributes. The specification is avaliable [here](https://docs.microsoft.com/pt-br/windows/win32/api/verrsrc/ns-verrsrc-vs_fixedfileinfo?redirectedfrom=MSDN)
+
+- [PythonUSBWebServer](https://github.com/thethales/PythonUSBWebServer) version info file: [PythonUSBWebServer](WINDOWS/VERSIONINFO_PYTHOUSBWEBSERVER)
+- [Apache Software Foundation SVN](https://subversion.apache.org/) version info file: [VERSIONINFO_SVN](WINDOWS/VERSIONINFO_SVN)
+
 ## Documents
 
 ### Doc | Microsoft Word
@@ -41,7 +73,7 @@ Mime Types:
 
 ### Mobi | Kindle
 
-```.mobi``` is a container for digital publication on the [Kindle](https://en.wikipedia.org/wiki/Amazon_Kindle) eletronic reader ecosystem
+```.mobi``` is a container for digital publications on the [Kindle](https://en.wikipedia.org/wiki/Amazon_Kindle) eletronic reader ecosystem
 
 - [Dracula by Bram Stoker EPUB (No Images)](http://www.gutenberg.org/ebooks/345.kindle.noimages)
 - [Dracula by Bram Stoker EPUB (With Images)](http://www.gutenberg.org/ebooks/345.kindle.images)
@@ -54,21 +86,6 @@ Every web page on the web build based on html
 
 - [Lorem Ipsum HTML Page](HTML/HTMLLoremIpsumOnePage.html) -  A simple HTML page listing some Lorem Ipsum paragraphs
 - [Lorem Ipsum HTML Page Minified](HTML/HTMLLoremIpsumOnePage.min.html) - A slimmed version of the sample Lorem Ipsum HTML page.
-
-
-### INI
-
-```.ini``` files are used by applications and the Windows operating system for storing initialization parameters. The information is stored in associative arrays, with a key and a value:
-
-```
-[section]
-name=value
-; comment text
-```
-
-- [Desktop.ini](INI/windows-desktop.ini) 
-- [setup.ini](INI/setup.ini) 
-
 
 
 ### PDF
