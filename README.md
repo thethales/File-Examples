@@ -5,7 +5,9 @@ This repository can be defined as:
 - Samples of files and structures for everyday use.
 - A compendium of links for sample files troughout the internet.
 
-The general ideia, is providing material for those situations in software development where you might need to do some unit testing while manipulating real world files.
+The general ideia, is providing material for those situations in software development or design where you might need to do some unit testing while manipulating real world files.
+
+A experimental webpage is avaliable at: https://thethales.github.io/File-Examples/
 
 
 ## Doc
