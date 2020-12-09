@@ -12,16 +12,46 @@ The general ideia, is providing material for those situations in software develo
 
 A experimental webpage is avaliable at: https://thethales.github.io/File-Examples/
 
+# Template
+
+This is a template for new listings
+
+```markdown
+
+# Category Title
+
+### Extensions title
+
+|Version| Size | Description | Link |
+|-------|------|-------------|------|
+```
+
 # Summary
+
 
 
 ## 3D Modeling
 
 ### BLEND | BLENDER
 
-```.blend``` is the dafult file system for [Blender](https://www.blender.org/) and can pack multiple scenes into a single file.
+```.blend``` is the dafult file system for [Blender](https://www.blender.org/) and can pack multiple scenes into a single file. The best place to find blender sample files is at [blender.org/download/demo-files/](https://www.blender.org/download/demo-files/) though they are offered in ```.zip``` containers. Below some independent samples are listed.
 
-- [cube.blend](BLEND/cube.blend) a simple 535kb file containing the default blender objet, _the cube_
+|Version| Size | Description | Link |
+|-------|------|-------------|------|
+|Blender 2.82| 535KB| A simple 535kb file containing the default blender objet, _the cube_|[cube.blend](BLEND/cube.blend) |
+
+### FBX 
+
+```.fbx``` (Filmbox) is a proprietary file format owned by Autodesk since 2006. It is currently one of the main 3D exchange formats as used by many 3D tools[¹](https://code.blender.org/2013/08/fbx-binary-file-format-specification/) [²](https://en.wikipedia.org/wiki/FBX). 
+FBX has a text based (ascii) and a binary version. There's no known public documentation avaliable, notes on the innerworkings of the format are provided in the following links: 
+- Blender Foundation, FBX Text-Based and Binary File Structure: [Original post](https://code.blender.org/2013/08/fbx-binary-file-format-specification/) | [Archive.org](http://web.archive.org/web/20200927125238/https://code.blender.org/2013/08/fbx-binary-file-format-specification/)
+
+
+|Version| Size | Description | Link |
+|-------|------|-------------|------|
+|Kaydara FBX Binary|26KB|A simple 3D cube exported as FBX by Blender 2.82|[cube.fbx](FBX/cube.fbx)|
+
+
 
 
 ## Configuration Files
@@ -120,8 +150,13 @@ The Rich Text Format [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) is a 
 
 A _text-file_ is one  of the most simple file structure, is structured as a sequence of lines 
 
-- [Lorem Ipsum TXT](https://github.com/thethales/File-Examples/blob/main/TXT/TXT%20-%20Lorem%20Ipsum.txt)
-- [Digits of Pi TXT](https://github.com/thethales/File-Examples/blob/main/TXT/TXT%20-%20Digits%20of%20Pi.txt)
+
+|Version| Size | Description | Link |
+|-------|------|-------------|------|
+|Latin  | 4KB  | 3330 characters of Lorem Ipsum| [TXT_LoremIpsum.txt](TXT/TXT_LoremIpsum.txt)|
+|       | 59KB  | 59641 Digitis of Pi| [TXT_DigitsofPi.txt](TXT/TXT_DigitsofPi.txt)|
+|EN-US  | 75KB | A Thousand Words List EN-US  by [Eric Price](https://www.cs.utexas.edu/~ecprice/). Original source avaliable [here](http://www.mit.edu/~ecprice/wordlist.10000)| [TXT_wordlist_ENUS_10000.txt](TXT/TXT_wordlist_ENUS_10000.txt)|
+
 
 
 ## Images
