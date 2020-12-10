@@ -1,0 +1,159 @@
+{
+    "3D Modeling": [{
+        "filetype": "BLEND | Blender",
+        "description": "```.blend``` is the dafult file system for [Blender](https://www.blender.org/) and can pack multiple scenes into a single file. The best place to find blender sample files is at [blender.org/download/demo-files/](https://www.blender.org/download/demo-files/) though they are offered in ```.zip``` containers. Below some independent samples are listed.",
+        "file_examples": [{
+            "version": "2.82",
+            "description": "A simple 535kb file containing the default blender objet, _the cube_"
+        }]
+    }],
+    "": [{
+        "filetype": "DOC",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "EPUB",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "FBX",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "HTML",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "INF",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "INI",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "JPG",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "PHP",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "PNG",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "RTF",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "TXT",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "WINDOWS",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "X3D",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }]
+    }, {
+        "filetype": "",
+        "description": "",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }]
+    }],
+    "Documents": [{
+        "filetype": "PDF",
+        "description": "The Portable Document Format (PDF) is a file format [developed](https://en.wikipedia.org/wiki/PDF) to present documents independent of hardware, software and operating system. This format is widely used and has several versions (as of Oct. 2020, 7 revisions in total). See the [ISO 32000-1:2008](https://www.iso.org/standard/51502.html) for PDF especification.",
+        "file_examples": [{
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }, {
+            "version": "",
+            "description": ""
+        }]
+    }]
+}
