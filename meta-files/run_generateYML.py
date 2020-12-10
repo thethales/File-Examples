@@ -73,7 +73,7 @@ def generateYMLInfo():
                             metadata['link'] = "[" + os.path.basename(base_file_path) + "]"+"(" + base_file_path + ")"
 
                         metadata['size'] = convert_size(base_file_size)
-                        metadata = sorted(metadata)
+                        
                         
                         yaml.safe_dump(metadata, metadata_yml_file)
 

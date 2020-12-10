@@ -14,6 +14,14 @@ class Markdown:
         return Markdown.line_break
 
     @staticmethod
+    def order_dic(dic):
+        ordered_dic={}
+        key_ls=sorted(dic.keys())
+        for key in key_ls:
+            ordered_dic[key]=dic[key]
+        return ordered_dic
+
+    @staticmethod
     def table(arr_json):
         theaders = "|"
         tlines = "|"
@@ -31,6 +39,7 @@ class Markdown:
         theaders = "|"
         tseparator = "|"
         for item in arr_json:
+            item = Markdown.order_dic(item)
             for line in item:
                 theaders += line + '|'
                 tseparator += "----" + '|'
@@ -40,11 +49,14 @@ class Markdown:
 
     @staticmethod
     def tableLines(arr_json:dict):
-        tlines = "|"
-        tseparator = "|"
+        tlines = ''
         for item in arr_json:
+            item = Markdown.order_dic(item)
             for line in item:
                 tlines += item[line] + '|'
             tlines += '\n'
-
+            tlines = '|' + tlines
         return tlines
+
+
+
