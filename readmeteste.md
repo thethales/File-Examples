@@ -72,92 +72,43 @@ This is a template for new listings
 |Dracula by Bram Stoker EPUB (No Images)|0|A real ebook hosted by Project Gutenberg|[Dracula by Bram Stoker EPUB (No Images)](http://www.gutenberg.org/ebooks/345.epub.noimages)|
 |Dracula by Bram Stoker EPUB (With Images)|0|A real ebook hosted by Project Gutenberg|[Dracula by Bram Stoker EPUB (With Images)](http://www.gutenberg.org/ebooks/345.epub.images)|
 
+## HTML
+
+```.html``` is the extension for Hypertext Markup Language files, wich are the standard markup language for documents designed to be displayed in a web browser. Every web page on the web build based on html
+
+|version|name|size|description|link|
+|----|----|----|----|----|
+||HTMLLoremIpsumOnePage.html|10.72 KB|A simple HTML page listing some Lorem Ipsum paragraphs|[HTMLLoremIpsumOnePage.html](HTML\HTMLLoremIpsumOnePage.html)|
+|HTMLLoremIpsumOnePage.min.html|6.83 KB|A slimmed version of the sample Lorem Ipsum HTML page.|[HTMLLoremIpsumOnePage.min.html](HTML\HTMLLoremIpsumOnePage.min.html)|
+
 ## PDF
 
 The Portable Document Format (PDF) is a file format [developed](https://en.wikipedia.org/wiki/PDF) to present documents independent of hardware, software and operating system. This format is widely used and has several versions (as of Oct. 2020, 7 revisions in total). See the [ISO 32000-1:2008](https://www.iso.org/standard/51502.html) for PDF especification.
 
 |version|name|size|description|link|
 |----|----|----|----|----|
-||PDF_HelloWorld_OneLine_1.5.pdf|10.39 KB||[PDF_HelloWorld_OneLine_1.5.pdf](PDF\PDF_HelloWorld_OneLine_1.5.pdf)|
-|PDF_LoremIpsum_OnePage_1.5.pdf|36.64 KB||[PDF_LoremIpsum_OnePage_1.5.pdf](PDF\PDF_LoremIpsum_OnePage_1.5.pdf)|
-|PDF_LoremIpsum_TwoPages_1.4.pdf|44.55 KB||[PDF_LoremIpsum_TwoPages_1.4.pdf](PDF\PDF_LoremIpsum_TwoPages_1.4.pdf)|
-|PDF_LoremIpsum_TwoPages_1.5.pdf|41.93 KB||[PDF_LoremIpsum_TwoPages_1.5.pdf](PDF\PDF_LoremIpsum_TwoPages_1.5.pdf)|
-
-# Unspecified
-
-
-## HTML
-
-
-
-|version|name|size|description|link|
-|----|----|----|----|----|
-||HTMLLoremIpsumOnePage.html|10.72 KB||[HTMLLoremIpsumOnePage.html](HTML\HTMLLoremIpsumOnePage.html)|
-|HTMLLoremIpsumOnePage.min.html|6.83 KB||[HTMLLoremIpsumOnePage.min.html](HTML\HTMLLoremIpsumOnePage.min.html)|
-
-## JPG
-
-
-
-|version|name|size|description|link|
-|----|----|----|----|----|
-||JPG_Black_100_1920x1080.jpg|24.01 KB||[JPG_Black_100_1920x1080.jpg](JPG\JPG_Black_100_1920x1080.jpg)|
-|JPG_Black_30_1920x1080.jpg|12.23 KB||[JPG_Black_30_1920x1080.jpg](JPG\JPG_Black_30_1920x1080.jpg)|
-|JPG_Black_70_1920x1080.jpg|12.23 KB||[JPG_Black_70_1920x1080.jpg](JPG\JPG_Black_70_1920x1080.jpg)|
-|JPG_BlankWhite_100_1920x1080.jpg|24.01 KB||[JPG_BlankWhite_100_1920x1080.jpg](JPG\JPG_BlankWhite_100_1920x1080.jpg)|
-|JPG_BlankWhite_30_1920x1080.jpg|12.23 KB||[JPG_BlankWhite_30_1920x1080.jpg](JPG\JPG_BlankWhite_30_1920x1080.jpg)|
-|JPG_BlankWhite_70_1920x1080.jpg|12.23 KB||[JPG_BlankWhite_70_1920x1080.jpg](JPG\JPG_BlankWhite_70_1920x1080.jpg)|
-
-## PHP
-
-
-
-|version|name|size|description|link|
-|----|----|----|----|----|
-||PHP-OptionSelect.php|327.0 B||[PHP-OptionSelect.php](PHP\PHP-OptionSelect.php)|
-
-## PNG
-
-
-
-|version|name|size|description|link|
-|----|----|----|----|----|
-||PNG_Black_1920x1080.png|381.0 B||[PNG_Black_1920x1080.png](PNG\PNG_Black_1920x1080.png)|
-|PNG_Blank_White_1920x1080.png|381.0 B||[PNG_Blank_White_1920x1080.png](PNG\PNG_Blank_White_1920x1080.png)|
+|1.5|PDF_HelloWorld_OneLine_1.5.pdf|10.39 KB|One line PDF|[PDF_HelloWorld_OneLine_1.5.pdf](PDF\PDF_HelloWorld_OneLine_1.5.pdf)|
+1.5|PDF_LoremIpsum_OnePage_1.5.pdf|36.64 KB|One Page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum)  formated article|[PDF_LoremIpsum_OnePage_1.5.pdf](PDF\PDF_LoremIpsum_OnePage_1.5.pdf)|
+1.4|PDF_LoremIpsum_TwoPages_1.4.pdf|44.55 KB| Two page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) document|[PDF_LoremIpsum_TwoPages_1.4.pdf](PDF\PDF_LoremIpsum_TwoPages_1.4.pdf)|
+1.5|PDF_LoremIpsum_TwoPages_1.5.pdf|41.93 KB|Two page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) document|[PDF_LoremIpsum_TwoPages_1.5.pdf](PDF\PDF_LoremIpsum_TwoPages_1.5.pdf)|
 
 ## RTF
 
-
+The Rich Text Format [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) is a proprietary document file format with published specification developed by Microsoft Corporation, and is used for word processing.
 
 |version|name|size|description|link|
 |----|----|----|----|----|
-||DavinceResolve17_ReadMe.rtf|21.51 KB||[DavinceResolve17_ReadMe.rtf](RTF\DavinceResolve17_ReadMe.rtf)|
+|17|DavinceResolve17_ReadMe.rtf|21.51 KB|DaVinci Resolve 17 Readme File|[DavinceResolve17_ReadMe.rtf](RTF\DavinceResolve17_ReadMe.rtf)|
 
 ## TXT
 
-
-
-|version|name|size|description|link|
-|----|----|----|----|----|
-||TXT_DigitsofPi.txt|58.25 KB||[TXT_DigitsofPi.txt](TXT\TXT_DigitsofPi.txt)|
-|TXT_LoremIpsum.txt|3.25 KB||[TXT_LoremIpsum.txt](TXT\TXT_LoremIpsum.txt)|
-|TXT_wordlist_ENUS_10000.txt|74.1 KB||[TXT_wordlist_ENUS_10000.txt](TXT\TXT_wordlist_ENUS_10000.txt)|
-
-## X3D
-
-
+A _text-file_ is one  of the most simple file structures, is structured as a sequence of lines 
 
 |version|name|size|description|link|
 |----|----|----|----|----|
-||cube.x3d|3.59 KB||[cube.x3d](X3D\cube.x3d)|
-
-## 
-
-
-
-|version|name|size|description|link|
-|----|----|----|----|----|
-||||||
+||TXT_DigitsofPi.txt|58.25 KB|59641 Digitis of Pi|[TXT_DigitsofPi.txt](TXT\TXT_DigitsofPi.txt)|
+Latin|TXT_LoremIpsum.txt|3.25 KB| 3330 characters of Lorem Ipsum|[TXT_LoremIpsum.txt](TXT\TXT_LoremIpsum.txt)|
+EN-US|TXT_wordlist_ENUS_10000.txt|74.1 KB|A Thousand Words List EN-US  by [Eric Price](https://www.cs.utexas.edu/~ecprice/). Original source avaliable [here](http://www.mit.edu/~ecprice/wordlist.10000)|[TXT_wordlist_ENUS_10000.txt](TXT\TXT_wordlist_ENUS_10000.txt)|
 
 # Configuration Files
 
@@ -178,6 +129,58 @@ The Portable Document Format (PDF) is a file format [developed](https://en.wikip
 |----|----|----|----|----|
 ||setup.ini|358.0 B||[setup.ini](INI\setup.ini)|
 |windows-desktop.ini|249.0 B||[windows-desktop.ini](INI\windows-desktop.ini)|
+
+# Images
+
+
+## JPG
+
+JPG is the extension used in image files compressed using the [JPEG method](https://en.wikipedia.org/wiki/JPEG). The images produced with this method are [_lossy_](https://en.wikipedia.org/wiki/Lossy_compression), there are multiple possible levels of quality, below the list includes some quality options.
+
+|version|name|size|description|link|
+|----|----|----|----|----|
+||JPG_Black_100_1920x1080.jpg|24.01 KB|Blank JPG Color Black, Quality 100%, Size: 1920x1080|[JPG_Black_100_1920x1080.jpg](JPG\JPG_Black_100_1920x1080.jpg)|
+|JPG_Black_30_1920x1080.jpg|12.23 KB|Blank JPG Color Black, Quality 30%, Size: 1920x1080|[JPG_Black_30_1920x1080.jpg](JPG\JPG_Black_30_1920x1080.jpg)|
+|JPG_Black_70_1920x1080.jpg|12.23 KB|Blank JPG Color Black, Quality 70%, Size: 1920x1080|[JPG_Black_70_1920x1080.jpg](JPG\JPG_Black_70_1920x1080.jpg)|
+|JPG_BlankWhite_100_1920x1080.jpg|24.01 KB|Blank JPG Color White, Quality 100%, Size: 1920x1080|[JPG_BlankWhite_100_1920x1080.jpg](JPG\JPG_BlankWhite_100_1920x1080.jpg)|
+|JPG_BlankWhite_30_1920x1080.jpg|12.23 KB|Blank JPG Color White, Quality 30%, Size: 1920x1080|[JPG_BlankWhite_30_1920x1080.jpg](JPG\JPG_BlankWhite_30_1920x1080.jpg)|
+|JPG_BlankWhite_70_1920x1080.jpg|12.23 KB|Blank JPG Color White, Quality 70%, Size: 1920x1080|[JPG_BlankWhite_70_1920x1080.jpg](JPG\JPG_BlankWhite_70_1920x1080.jpg)|
+
+## PNG
+
+The Portable Network Graphics [PNG](https://en.wikipedia.org/wiki/Portable_Network_Graphics) is a raster-graphics file format that supports lossless data compression. 
+
+|version|name|size|description|link|
+|----|----|----|----|----|
+||PNG_Black_1920x1080.png|381.0 B|Blank PNG Color Black, Size: 1920x1080|[PNG_Black_1920x1080.png](PNG\PNG_Black_1920x1080.png)|
+|PNG_Blank_White_1920x1080.png|381.0 B|Blank PNG Color White, Size: 1920x1080|[PNG_Blank_White_1920x1080.png](PNG\PNG_Blank_White_1920x1080.png)|
+
+# Unspecified
+
+
+## PHP
+
+
+
+|version|name|size|description|link|
+|----|----|----|----|----|
+||PHP-OptionSelect.php|327.0 B||[PHP-OptionSelect.php](PHP\PHP-OptionSelect.php)|
+
+## X3D
+
+
+
+|version|name|size|description|link|
+|----|----|----|----|----|
+||cube.x3d|3.59 KB||[cube.x3d](X3D\cube.x3d)|
+
+## 
+
+
+
+|version|name|size|description|link|
+|----|----|----|----|----|
+||||||
 
 # WINDOWS
 

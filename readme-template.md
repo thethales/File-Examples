@@ -12,19 +12,7 @@ The general ideia, is providing material for those situations in software develo
 
 A experimental webpage is avaliable at: https://thethales.github.io/File-Examples/
 
-# Template
 
-This is a template for new listings
-
-```markdown
-
-# Category Title
-
-### Extensions title
-
-|Version| Size | Description | Link |
-|-------|------|-------------|------|
-```
 
 # Summary
 

@@ -3,6 +3,7 @@ import yaml
 import json
 import shutil
 import math
+import collections
 
 
 
@@ -59,18 +60,20 @@ def generateYMLInfo():
 
                     for item_template in metadata_template:
                         metadata_yml_file = open(metadata_file_path,'w')
+                        print(item_template)
                         if item_template not in metadata:
                             metadata[item_template] = ""
                             yaml.safe_dump(metadata, metadata_yml_file)
                             metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
                         
-                        if metadata['name'] == '':
+                        if metadata['name'] == None:
                             metadata['name'] = os.path.basename(base_file_path)
                         
-                        if metadata['link'] == '':
+                        if metadata['link'] == None:
                             metadata['link'] = "[" + os.path.basename(base_file_path) + "]"+"(" + base_file_path + ")"
 
                         metadata['size'] = convert_size(base_file_size)
+                        metadata = sorted(metadata)
                         
                         yaml.safe_dump(metadata, metadata_yml_file)
 
@@ -82,12 +85,14 @@ def generateYMLInfo():
 
                     for item_template in metadata_template:
                         metadata_yml_file = open(metadata_file_path,'w')
+                        
                         if item_template not in metadata:
                             metadata[item_template] = ""
                             yaml.safe_dump(metadata, metadata_yml_file)
                             metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
 
-                        if metadata['title'] == '':
+
+                        if metadata['title'] == None:
                             dir_name = os.path.dirname(metadata_file_path)
                             metadata['title'] = dir_name
 

@@ -1,11 +1,6 @@
-category: 'Documents'
-description: "```.doc``` and ```.docx``` are the formats of files created by [Microsoft Word](https://en.wikipedia.org/wiki/Microsoft_Word)
+category: Documents
+description: '```.doc``` and ```.docx``` are the formats of files created by [Microsoft
+  Word](https://en.wikipedia.org/wiki/Microsoft_Word)
 
-```
-Mime Types:
-  application/doc
-  application/ms-doc
-  application/msword
-```
-"
+  ``` Mime Types: application/doc application/ms-doc application/msword ``` '
 title: DOC
