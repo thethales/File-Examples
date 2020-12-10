@@ -148,7 +148,7 @@ The Rich Text Format [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) is a 
 
 ### TXT
 
-A _text-file_ is one  of the most simple file structure, is structured as a sequence of lines 
+A _text-file_ is one  of the most simple file structures, is structured as a sequence of lines 
 
 
 |Version| Size | Description | Link |
