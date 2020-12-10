@@ -78,7 +78,7 @@ def getDirectoryInfo(dump_to_json_file:bool):
                     temp_fileExampleInfo = {
                         "version":info["version"],
                         "name":info["name"],
-                        "size":info["size"],
+                        "size": '0' if info["size"] == None else info["size"],
                         "description":info["description"],
                         "link":info["link"]
                     }
