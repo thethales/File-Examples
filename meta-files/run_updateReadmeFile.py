@@ -77,7 +77,10 @@ def getDirectoryInfo(dump_to_json_file:bool):
 
                     temp_fileExampleInfo = {
                         "version":info["version"],
-                        "description":info["description"]
+                        "name":info["name"],
+                        "size":info["size"],
+                        "description":info["description"],
+                        "link":info["link"]
                     }
 
                     temp_listOfFiles.append(temp_fileExampleInfo)
@@ -108,6 +111,7 @@ def generateReadme():
             f.write(Markdown.header(2,item['filetype']))
             f.write(Markdown.lineBreak())
             f.write(item['description'])
+            f.write(Markdown.lineBreak())
             f.write(Markdown.lineBreak())
             f.write(Markdown.tableHeader(item['file_examples']))
             f.write(Markdown.tableLines(item['file_examples']))
