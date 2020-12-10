@@ -1,4 +1,5 @@
-description: 'A simple 535kb file containing the default blender objet, _the cube_'
+description: A simple 535kb file containing the default blender objet, _the cube_
+link: '[cube.blend](BLEND\cube.blend)'
 name: cube.blend
 size: 544.47 KB
 version: '2.82'

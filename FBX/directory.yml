@@ -1,3 +1,10 @@
-category: ''
-description: ''
+category: 3D Modeling
+description: "```.fbx``` (Filmbox) is a proprietary file format owned by Autodesk\
+  \ since 2006. It is currently one of the main 3D exchange formats as used by many\
+  \ 3D tools[\xC2\xB9](https://code.blender.org/2013/08/fbx-binary-file-format-specification/)\
+  \ [\xC2\xB2](https://en.wikipedia.org/wiki/FBX). FBX has a text based (ascii) and\
+  \ a binary version. There's no known public documentation avaliable, notes on the\
+  \ innerworkings of the format are provided in the following links:\n- Blender Foundation,\
+  \ FBX Text-Based and Binary File Structure: [Original post](https://code.blender.org/2013/08/fbx-binary-file-format-specification/)\
+  \ | [Archive.org](http://web.archive.org/web/20200927125238/https://code.blender.org/2013/08/fbx-binary-file-format-specification/)"
 title: FBX
