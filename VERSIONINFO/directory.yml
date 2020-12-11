@@ -1,3 +1,6 @@
-category: 'WINDOWS'
-description: '```VersionInfo```  is a text file used by windows 32bit applications that contains version information. This information is language and code page independent. And mostly describes the product, author, release, copyright, iternal names, among many others attributes. The specification is avaliable [here](https://docs.microsoft.com/pt-br/windows/win32/api/verrsrc/ns-verrsrc-vs_fixedfileinfo?redirectedfrom=MSDN)'
+category: WINDOWS
+description: '```VersionInfo```  is a text file used by windows 32bit applications
+  that contains version information. This information is language and code page independent.
+  And mostly describes the product, author, release, copyright, iternal names, among
+  many others attributes. The specification is avaliable [here](https://docs.microsoft.com/pt-br/windows/win32/api/verrsrc/ns-verrsrc-vs_fixedfileinfo?redirectedfrom=MSDN)'
 title: VersionInfo

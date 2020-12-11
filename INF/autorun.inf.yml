@@ -1,4 +1,5 @@
-description: '```autorun.inf``` is a common file found in CD-ROMs for describing the procedures to auto launch the CD contents '
+description: '```autorun.inf``` is a common file found in CD-ROMs for describing the
+  procedures to auto launch the CD contents '
 link: '[autorun.inf](INF\autorun.inf)'
 name: autorun.inf
 size: 41.0 B

@@ -23,7 +23,7 @@ The ```directory.yml``` file, describes the folder metadata and contains ilustra
 
 The ```README.ME``` file is dynamically built from a Python [script](./meta-files/run_updateReadmeFile.py), that amalgamates every metadata file into a single document. While the _metadata .yml files_ themselves are updated and created by another _Python_ [script](./meta-files/run_updateMetadata.py).
 
-The specific inner workings are describe in detail in the [docs section](./meta-files/docs)
+The resulting _summary_ of files is presented below. For the specific inner workings consult the [docs section](./meta-files/docs), where the everything is describe in detail.
 
 # Summary
 
@@ -37,7 +37,7 @@ The specific inner workings are describe in detail in the [docs section](./meta-
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-|A simple 535kb file containing the default blender objet, _the cube_|[cube.blend](BLEND\cube.blend)|cube.blend|544.47 KB|2.82|
+|A simple 535kb file containing the default blender objet, _the cube_|[cube.blend](BLEND\cube.blend)|cube.blend|135.0 B|2.82|
 |A simple 535kb file containing the default blender objet, _the cube_|[cube.blend](BLEND\cube.blend)|cube.blend|544.47 KB|2.82|
 
 ## FBX
@@ -68,8 +68,6 @@ The specific inner workings are describe in detail in the [docs section](./meta-
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
 |One page e-book document of the [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum)|[EPUB_LoremIpsum_OnePage.epub](EPUB\EPUB_LoremIpsum_OnePage.epub)|EPUB_LoremIpsum_OnePage.epub|3.75 KB||
-|A real ebook hosted by Project Gutenberg|[Dracula by Bram Stoker EPUB (No Images)](http://www.gutenberg.org/ebooks/345.epub.noimages)|Dracula by Bram Stoker EPUB (No Images)|0||
-|A real ebook hosted by Project Gutenberg|[Dracula by Bram Stoker EPUB (With Images)](http://www.gutenberg.org/ebooks/345.epub.images)|Dracula by Bram Stoker EPUB (With Images)|0||
 
 ## HTML
 
@@ -86,6 +84,7 @@ The Portable Document Format (PDF) is a file format [developed](https://en.wikip
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
+|Human Rights Declaration PT-BR version|[Declaração_Universal_Direitos_Humanos.pdf](PDF\Declaração_Universal_Direitos_Humanos.pdf)|Declaração_Universal_Direitos_Humanos.pdf|48.89 KB|1.5|
 |One line PDF|[PDF_HelloWorld_OneLine_1.5.pdf](PDF\PDF_HelloWorld_OneLine_1.5.pdf)|PDF_HelloWorld_OneLine_1.5.pdf|10.39 KB|1.5|
 |One Page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum)  formated article|[PDF_LoremIpsum_OnePage_1.5.pdf](PDF\PDF_LoremIpsum_OnePage_1.5.pdf)|PDF_LoremIpsum_OnePage_1.5.pdf|36.64 KB|1.5|
 | Two page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) document|[PDF_LoremIpsum_TwoPages_1.4.pdf](PDF\PDF_LoremIpsum_TwoPages_1.4.pdf)|PDF_LoremIpsum_TwoPages_1.4.pdf|44.55 KB|1.4|
@@ -156,6 +155,13 @@ The Portable Network Graphics [PNG](https://en.wikipedia.org/wiki/Portable_Netwo
 
 # Unspecified
 
+
+## 
+
+
+
+|
+|
 
 ## PHP
 
