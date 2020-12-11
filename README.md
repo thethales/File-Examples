@@ -1,7 +1,7 @@
 # File-Examples
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-![Files Examples Horizontal](meta-files/img/logo_fileexamples.jpg)
+![Files Examples Horizontal](meta-files/img/FilesExamplesLogoAlternative.png)
 
 This repository can be defined as:
 - A collection of file examples of different formats.
@@ -27,6 +27,72 @@ The resulting _summary_ of files is presented below. For the specific inner work
 
 # Summary
 
+
+# Unspecified
+
+
+## 7Z
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||[Wikipedia.7z](7Z\Wikipedia.7z)|Wikipedia.7z|52.47 KB|LZMA2:192|
+
+## GZ
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||[Wikipedia.html.gz](GZ\Wikipedia.html.gz)|Wikipedia.html.gz|56.4 KB||
+
+## MOBI
+
+
+
+|
+|
+
+## PHP
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||[PHP-OptionSelect.php](PHP\PHP-OptionSelect.php)|PHP-OptionSelect.php|327.0 B||
+
+## TAR
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||[Wikipedia.tar](TAR\Wikipedia.tar)|Wikipedia.tar|162.0 KB||
+
+## X3D
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||[cube.x3d](X3D\cube.x3d)|cube.x3d|3.59 KB||
+
+## ZIP
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||[WikipediaOrg.zip](ZIP\WikipediaOrg.zip)|WikipediaOrg.zip|56.52 KB|ZIP|
+
+## 
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||||||
 
 # 3D Modeling
 
@@ -152,40 +218,6 @@ The Portable Network Graphics [PNG](https://en.wikipedia.org/wiki/Portable_Netwo
 |----|----|----|----|----|
 |Blank PNG Color Black, Size: 1920x1080|[PNG_Black_1920x1080.png](PNG\PNG_Black_1920x1080.png)|PNG_Black_1920x1080.png|381.0 B||
 |Blank PNG Color White, Size: 1920x1080|[PNG_Blank_White_1920x1080.png](PNG\PNG_Blank_White_1920x1080.png)|PNG_Blank_White_1920x1080.png|381.0 B||
-
-# Unspecified
-
-
-## 
-
-
-
-|
-|
-
-## PHP
-
-
-
-|Description|Link|Name|Size|Version|
-|----|----|----|----|----|
-||[PHP-OptionSelect.php](PHP\PHP-OptionSelect.php)|PHP-OptionSelect.php|327.0 B||
-
-## X3D
-
-
-
-|Description|Link|Name|Size|Version|
-|----|----|----|----|----|
-||[cube.x3d](X3D\cube.x3d)|cube.x3d|3.59 KB||
-
-## 
-
-
-
-|Description|Link|Name|Size|Version|
-|----|----|----|----|----|
-||||||
 
 # WINDOWS
 
