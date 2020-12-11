@@ -1,5 +1,5 @@
 # File-Examples
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
 
 ![Files Examples Horizontal](meta-files/img/FilesExamplesLogoAlternative.png)
 
@@ -150,7 +150,7 @@ The Portable Document Format (PDF) is a file format [developed](https://en.wikip
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-|Human Rights Declaration PT-BR version|[Declaração_Universal_Direitos_Humanos.pdf](PDF\Declaração_Universal_Direitos_Humanos.pdf)|Declaração_Universal_Direitos_Humanos.pdf|48.89 KB|1.5|
+|Human Rights Declaration PT-BR version|[Declaraï¿½ï¿½o_Universal_Direitos_Humanos.pdf](PDF\Declaraï¿½ï¿½o_Universal_Direitos_Humanos.pdf)|Declaraï¿½ï¿½o_Universal_Direitos_Humanos.pdf|48.89 KB|1.5|
 |One line PDF|[PDF_HelloWorld_OneLine_1.5.pdf](PDF\PDF_HelloWorld_OneLine_1.5.pdf)|PDF_HelloWorld_OneLine_1.5.pdf|10.39 KB|1.5|
 |One Page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum)  formated article|[PDF_LoremIpsum_OnePage_1.5.pdf](PDF\PDF_LoremIpsum_OnePage_1.5.pdf)|PDF_LoremIpsum_OnePage_1.5.pdf|36.64 KB|1.5|
 | Two page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) document|[PDF_LoremIpsum_TwoPages_1.4.pdf](PDF\PDF_LoremIpsum_TwoPages_1.4.pdf)|PDF_LoremIpsum_TwoPages_1.4.pdf|44.55 KB|1.4|
