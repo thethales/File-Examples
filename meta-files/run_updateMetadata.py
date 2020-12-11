@@ -95,7 +95,7 @@ def generateYMLInfo():
                             metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
 
 
-                        if metadata['title'] == None:
+                        if metadata['title'] == '':
                             dir_name = os.path.dirname(metadata_file_path)
                             metadata['title'] = dir_name
 

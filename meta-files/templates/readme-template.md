@@ -1,7 +1,7 @@
 # File-Examples
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-![Files Examples Horizontal](meta-files/img/logo_fileexamples.jpg)
+![Files Examples Horizontal](meta-files/img/FilesExamplesLogoAlternative.png)
 
 This repository can be defined as:
 - A collection of file examples of different formats.
