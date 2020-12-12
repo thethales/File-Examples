@@ -1,6 +1,6 @@
 description: '[Apache Software Foundation SVN](https://subversion.apache.org/) version
   info file'
-link: '[VERSIONINFO_SVN](WINDOWS\VERSIONINFO_SVN)'
+link: '[VERSIONINFO_SVN](/file-examples\VERSIONINFO\VERSIONINFO_SVN)'
 name: VERSIONINFO_SVN
 size: 1.39 KB
 version: ''
