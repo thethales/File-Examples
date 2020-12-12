@@ -1,3 +1,4 @@
-category: ''
-description: ''
+category: Archive File Format
+description: ZIP is an archive file format that supports lossless data compression.
+  A ZIP file may contain one or more files or directories that may have been compressed.
 title: ZIP

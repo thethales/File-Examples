@@ -1,6 +1,5 @@
 # File-Examples
 
-
 ![Files Examples Horizontal](meta-files/img/FilesExamplesLogoAlternative.png)
 
 This repository can be defined as:
@@ -28,71 +27,48 @@ The resulting _summary_ of files is presented below. For the specific inner work
 # Summary
 
 
-# Unspecified
+# Archive File Format
 
 
 ## 7Z
 
-
+7z is a compressed archive file format that supports several different data compression, encryption and pre-processing algorithms. The 7z format initially appeared as implemented by the 7-Zip archiver. The 7-Zip program is publicly available under the terms of the GNU Lesser General Public License. See more at [7z](https://en.wikipedia.org/wiki/7z)
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-||[Wikipedia.7z](7Z\Wikipedia.7z)|Wikipedia.7z|52.47 KB|LZMA2:192|
+|A 7z archive of a HTML file version of  Wikipedia.org|[Wikipedia.7z](7Z\Wikipedia.7z)|Wikipedia.7z|52.47 KB|LZMA2:192|
 
 ## GZ
 
-
-
-|Description|Link|Name|Size|Version|
-|----|----|----|----|----|
-||[Wikipedia.html.gz](GZ\Wikipedia.html.gz)|Wikipedia.html.gz|56.4 KB||
-
-## MOBI
-
-
-
-|
-|
-
-## PHP
-
-
+gzip is a file format and a software application used for file compression and decompression. The program was created by Jean-loup Gailly and Mark Adler as a free software replacement for the compress program used in early Unix systems. See more at [gzip](https://en.wikipedia.org/wiki/Gzip)
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-||[PHP-OptionSelect.php](PHP\PHP-OptionSelect.php)|PHP-OptionSelect.php|327.0 B||
+|A gzip archive of the HTML version of the page Wikipedia.org|[Wikipedia.html.gz](GZ\Wikipedia.html.gz)|Wikipedia.html.gz|56.4 KB||
 
 ## TAR
 
-
-
-|Description|Link|Name|Size|Version|
-|----|----|----|----|----|
-||[Wikipedia.tar](TAR\Wikipedia.tar)|Wikipedia.tar|162.0 KB||
-
-## X3D
-
-
+In computing, tar is a computer software utility for collecting many files into one archive file, often referred to as a tarball, for distribution or backup purposes A tar archive consists of a series of file objects, each file object includes any file data, and is preceded by a 512-byte header record. The file data is written unaltered except that its length is rounded up to a multiple of 512 bytes. See more at [tar](https://en.wikipedia.org/wiki/Tar_(computing))
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-||[cube.x3d](X3D\cube.x3d)|cube.x3d|3.59 KB||
+|A tar archive containing two files: the HTML versions of the Wikipedia.org and the page www.isitchristmas.com|[Wikipedia.tar](TAR\Wikipedia.tar)|Wikipedia.tar|168.0 KB||
+
+## WARC
+
+This format is used especifically for archiving ```web-crawls```, and is a revision of the Internet Archives ARC File Format, specifying a method for combining multiple digital resources into an aggregate archive file together with related information.
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+|One page WARC archive of the Wikipedia.org homepage|[WikipediaOrg-20201212031238412.warc](WARC\WikipediaOrg-20201212031238412.warc)|WikipediaOrg-20201212031238412.warc|421.33 KB||
 
 ## ZIP
 
-
-
-|Description|Link|Name|Size|Version|
-|----|----|----|----|----|
-||[WikipediaOrg.zip](ZIP\WikipediaOrg.zip)|WikipediaOrg.zip|56.52 KB|ZIP|
-
-## 
-
-
+ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed.
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-||||||
+|A zip archive of the HTML version of the page Wikipedia.org|[WikipediaOrg.zip](ZIP\WikipediaOrg.zip)|WikipediaOrg.zip|56.52 KB|ZIP|
 
 # 3D Modeling
 
@@ -115,6 +91,14 @@ The resulting _summary_ of files is presented below. For the specific inner work
 |----|----|----|----|----|
 |A simple 3D cube exported as FBX by Blender 2.82|[cube.fbx](FBX\cube.fbx)|cube.fbx|25.7 KB|Kaydara FBX Binary|
 
+## X3D
+
+X3D is a royalty-free ISO/IEC standard for declaratively representing 3D computer graphics. File format support includes XML, ClassicVRML, Compressed Binary Encoding (CBE) and a draft JSON encoding. See more at [x3d](https://en.wikipedia.org/wiki/X3D)
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+|A simple file containing the default blender objet, _the cube_, exported on Blender 2.92|[cube.x3d](X3D\cube.x3d)|cube.x3d|3.59 KB||
+
 # Documents
 
 
@@ -126,14 +110,6 @@ The resulting _summary_ of files is presented below. For the specific inner work
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
 | One Page Document of [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum)|[DOC_LoremIpsum_OnePage.docx](DOC\DOC_LoremIpsum_OnePage.docx)|DOC_LoremIpsum_OnePage.docx|8.81 KB||
-
-## EPUB
-
-```.epub``` is a container for digital publications. Widely used for e-book distribution.
-
-|Description|Link|Name|Size|Version|
-|----|----|----|----|----|
-|One page e-book document of the [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum)|[EPUB_LoremIpsum_OnePage.epub](EPUB\EPUB_LoremIpsum_OnePage.epub)|EPUB_LoremIpsum_OnePage.epub|3.75 KB||
 
 ## HTML
 
@@ -150,7 +126,7 @@ The Portable Document Format (PDF) is a file format [developed](https://en.wikip
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-|Human Rights Declaration PT-BR version|[Declaraï¿½ï¿½o_Universal_Direitos_Humanos.pdf](PDF\Declaraï¿½ï¿½o_Universal_Direitos_Humanos.pdf)|Declaraï¿½ï¿½o_Universal_Direitos_Humanos.pdf|48.89 KB|1.5|
+|Human Rights Declaration PT-BR version|[Declaração_Universal_Direitos_Humanos.pdf](PDF\Declaração_Universal_Direitos_Humanos.pdf)|Declaração_Universal_Direitos_Humanos.pdf|48.89 KB|1.5|
 |One line PDF|[PDF_HelloWorld_OneLine_1.5.pdf](PDF\PDF_HelloWorld_OneLine_1.5.pdf)|PDF_HelloWorld_OneLine_1.5.pdf|10.39 KB|1.5|
 |One Page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum)  formated article|[PDF_LoremIpsum_OnePage_1.5.pdf](PDF\PDF_LoremIpsum_OnePage_1.5.pdf)|PDF_LoremIpsum_OnePage_1.5.pdf|36.64 KB|1.5|
 | Two page [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) document|[PDF_LoremIpsum_TwoPages_1.4.pdf](PDF\PDF_LoremIpsum_TwoPages_1.4.pdf)|PDF_LoremIpsum_TwoPages_1.4.pdf|44.55 KB|1.4|
@@ -173,6 +149,24 @@ A _text-file_ is one  of the most simple file structures, is structured as a seq
 |59641 Digitis of Pi|[TXT_DigitsofPi.txt](TXT\TXT_DigitsofPi.txt)|TXT_DigitsofPi.txt|58.25 KB||
 | 3330 characters of Lorem Ipsum|[TXT_LoremIpsum.txt](TXT\TXT_LoremIpsum.txt)|TXT_LoremIpsum.txt|3.25 KB|Latin|
 |A Thousand Words List EN-US  by [Eric Price](https://www.cs.utexas.edu/~ecprice/). Original source avaliable [here](http://www.mit.edu/~ecprice/wordlist.10000)|[TXT_wordlist_ENUS_10000.txt](TXT\TXT_wordlist_ENUS_10000.txt)|TXT_wordlist_ENUS_10000.txt|74.1 KB|EN-US|
+
+# Ebook
+
+
+## EPUB
+
+```.epub``` is a container for digital publications. Widely used for e-book distribution.
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+|One page e-book document of the [Lorem Ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum)|[EPUB_LoremIpsum_OnePage.epub](EPUB\EPUB_LoremIpsum_OnePage.epub)|EPUB_LoremIpsum_OnePage.epub|3.75 KB||
+
+## MOBI
+
+```.mobi``` is a container for digital publications on the [Kindle](https://en.wikipedia.org/wiki/Amazon_Kindle) eletronic reader ecosystem
+
+|
+|
 
 # Configuration Files
 
@@ -219,6 +213,17 @@ The Portable Network Graphics [PNG](https://en.wikipedia.org/wiki/Portable_Netwo
 |Blank PNG Color Black, Size: 1920x1080|[PNG_Black_1920x1080.png](PNG\PNG_Black_1920x1080.png)|PNG_Black_1920x1080.png|381.0 B||
 |Blank PNG Color White, Size: 1920x1080|[PNG_Blank_White_1920x1080.png](PNG\PNG_Blank_White_1920x1080.png)|PNG_Blank_White_1920x1080.png|381.0 B||
 
+# Programming Languages
+
+
+## PHP
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||[PHP-OptionSelect.php](PHP\PHP-OptionSelect.php)|PHP-OptionSelect.php|327.0 B||
+
 # WINDOWS
 
 
@@ -230,3 +235,14 @@ The Portable Network Graphics [PNG](https://en.wikipedia.org/wiki/Portable_Netwo
 |----|----|----|----|----|
 |[PythonUSBWebServer](https://github.com/thethales/PythonUSBWebServer) versioninfo file|[VERSIONINFO_PYTHOUSBWEBSERVER](WINDOWS\VERSIONINFO_PYTHOUSBWEBSERVER)|VERSIONINFO_PYTHOUSBWEBSERVER|1.41 KB||
 |[Apache Software Foundation SVN](https://subversion.apache.org/) version info file|[VERSIONINFO_SVN](WINDOWS\VERSIONINFO_SVN)|VERSIONINFO_SVN|1.39 KB||
+
+# Unspecified
+
+
+## 
+
+
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+||||||

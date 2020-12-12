@@ -1,5 +1,4 @@
 # File-Examples
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 ![Files Examples Horizontal](meta-files/img/FilesExamplesLogoAlternative.png)
 

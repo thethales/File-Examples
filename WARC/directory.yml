@@ -1,0 +1,6 @@
+category: Archive File Format
+description: This format is used especifically for archiving ```web-crawls```, and
+  is a revision of the Internet Archives ARC File Format, specifying a method for
+  combining multiple digital resources into an aggregate archive file together with
+  related information.
+title: WARC

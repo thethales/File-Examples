@@ -1,3 +1,6 @@
-category: ''
-description: ''
+category: Archive File Format
+description: gzip is a file format and a software application used for file compression
+  and decompression. The program was created by Jean-loup Gailly and Mark Adler as
+  a free software replacement for the compress program used in early Unix systems.
+  See more at [gzip](https://en.wikipedia.org/wiki/Gzip)
 title: GZ

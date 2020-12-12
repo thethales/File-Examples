@@ -1,3 +1,6 @@
-category: ''
-description: ''
+category: Archive File Format
+description: 7z is a compressed archive file format that supports several different
+  data compression, encryption and pre-processing algorithms. The 7z format initially
+  appeared as implemented by the 7-Zip archiver. The 7-Zip program is publicly available
+  under the terms of the GNU Lesser General Public License. See more at [7z](https://en.wikipedia.org/wiki/7z)
 title: 7Z
