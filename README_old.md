@@ -112,7 +112,7 @@ Mime Types:
 
 ### Mobi | Kindle
 
-```.mobi``` is a container for digital publications on the [Kindle](https://en.wikipedia.org/wiki/Amazon_Kindle) eletronic reader ecosystem
+```.mobi``` is a container for digital publications on the [Kindle](https://en.wikipedia.org/wiki/Amazon_Kindle) electronicreader ecosystem
 
 - [Dracula by Bram Stoker EPUB (No Images)](http://www.gutenberg.org/ebooks/345.kindle.noimages)
 - [Dracula by Bram Stoker EPUB (With Images)](http://www.gutenberg.org/ebooks/345.kindle.images)
