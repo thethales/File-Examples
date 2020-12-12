@@ -10,4 +10,11 @@ index_template_file: ./meta-files/templates/readme-template.md          #The bas
 directory_metadata_template_file: ./meta-files/templates/directory.yml  #The template for creating Directory Metadata Files
 file_metadata_template_file: ./meta-files/templates/file.file.yml       #The template for creating File Metadata Files
 
+# Metadata
+exclude_directories:                                                    #List of Directories that should be ignored while looking for file examples
+  - .vscode
+  - .git
+  - meta-files
+  - .obsolete
+
 

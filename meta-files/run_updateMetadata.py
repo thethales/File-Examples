@@ -26,7 +26,7 @@ def convert_size(size_bytes):
 
 def generateYMLInfo():
 
-    excludes = ['.vscode','.git','meta-files']
+    excludes = params['exclude_directories']
     root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     
 
