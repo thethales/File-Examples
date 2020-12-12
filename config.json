@@ -1,0 +1,7 @@
+{
+    "useSideMenu": true,
+    "lineBreaks": "gfm",
+    "additionalFooterText": "File Examples",
+    "anchorCharacter": "#",
+    "brand_logo" : "./meta-files/img/FilesExamplesLogoAlternative.png"
+}
