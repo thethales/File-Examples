@@ -28,14 +28,13 @@ def generateYMLInfo():
 
     excludes = params['exclude_directories']
     root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-    
+    root += params['file_examples_directory']
 
     for dirs in os.listdir(root):
-        if dirs not in excludes and os.path.isdir(dirs):
-            
+        if dirs not in excludes and os.path.isdir(os.path.join(root,dirs)):
             #Create directory.yml if not found
-            if not os.path.isfile(os.path.join(dirs,params['dir_metadata_fileName'])):
-                shutil.copyfile(params['directory_metadata_template_file'], os.path.join(dirs,params['dir_metadata_fileName'])) 
+            if not os.path.isfile(os.path.join(root,dirs,params['dir_metadata_fileName'])):
+                shutil.copyfile(params['directory_metadata_template_file'], os.path.join(root,dirs,params['dir_metadata_fileName'])) 
                       
            
             #Create file.file.yml if not found
@@ -44,18 +43,17 @@ def generateYMLInfo():
                 
                 #Create file.file.yml if not found
                 if not file.endswith(".yml") and file != os.path.basename(params['dir_metadata_fileName']) :
-                    metadata_file_path = os.path.join(dirs,file+'.yml')
+                    metadata_file_path = os.path.join(root,dirs,file+'.yml')
                     if not os.path.isfile(metadata_file_path):
                         shutil.copyfile(params['file_metadata_template_file'], metadata_file_path) 
                 
                 #Reviews the metadata file adding missing keys for the file.file.yml metadata file
                 if file.endswith(".yml") and file != os.path.basename(params['dir_metadata_fileName']) :
-                    
-                    metadata_file_path = os.path.join(dirs,file)
+                    metadata_file_path = os.path.join(root,dirs,file)
                     metadata_template = yaml.load(open(params['file_metadata_template_file']), Loader=yaml.FullLoader)
                     metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
                 
-                    base_file_path = os.path.join(dirs,file.replace('.yml',''))
+                    base_file_path = os.path.join(root,dirs,file.replace('.yml',''))
                     try:
                         base_file_size = os.stat(base_file_path).st_size
                     except:
@@ -64,11 +62,15 @@ def generateYMLInfo():
                     for item_template in metadata_template:
                         metadata_yml_file = open(metadata_file_path,'w')
                         
-                        if item_template not in metadata:
-                            metadata[item_template] = ""
+                        if not metadata:
+                            metadata = metadata_template
                             yaml.safe_dump(metadata, metadata_yml_file)
-                            metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
-                        
+                        else:
+                            if item_template not in metadata:
+                                metadata[item_template] = ""
+                                yaml.safe_dump(metadata, metadata_yml_file)
+                                metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
+                            
                         if metadata['name'] == '':
                             metadata['name'] = os.path.basename(base_file_path)
                         
@@ -82,21 +84,25 @@ def generateYMLInfo():
 
                 #Reviews the metadata file adding missing keys for the directory.yml metadata file
                 if file == os.path.basename(params['dir_metadata_fileName']):
-                    metadata_file_path = os.path.join(dirs,file)
+                    metadata_file_path = os.path.join(root,dirs,file)
                     metadata_template = yaml.load(open(params['directory_metadata_template_file']), Loader=yaml.FullLoader)
                     metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
 
                     for item_template in metadata_template:
                         metadata_yml_file = open(metadata_file_path,'w')
                         
-                        if item_template not in metadata:
-                            metadata[item_template] = ""
+                        if not metadata:
+                            metadata = metadata_template
                             yaml.safe_dump(metadata, metadata_yml_file)
-                            metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
+                        else:
+                            if item_template not in metadata:
+                                metadata[item_template] = ""
+                                yaml.safe_dump(metadata, metadata_yml_file)
+                                metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
 
 
                         if metadata['title'] == '':
-                            dir_name = os.path.dirname(metadata_file_path)
+                            dir_name = metadata_file_path.split('\\')[-2]
                             metadata['title'] = dir_name
 
                         yaml.safe_dump(metadata, metadata_yml_file)

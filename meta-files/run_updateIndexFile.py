@@ -44,8 +44,10 @@ def getDirectoryInfo(dump_to_json_file:bool):
 
     """    
     json_content = {}
-    
-    for root, dirs, files in os.walk("."):
+    parent_folder = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    file_examples_directory = parent_folder + params['file_examples_directory']
+
+    for root, dirs, files in os.walk(file_examples_directory):
         for directory in dirs:
             
             #Get Directory BaseInfo from file

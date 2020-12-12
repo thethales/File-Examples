@@ -1,3 +1,7 @@
-category: 'Video'
-description: 'Bink Video is a proprietary file format (extensions .bik and .bk2) for video developed by RAD Game Tools. It has been primarily used for full-motion video sequences in video games, and has been used in games for Windows, Mac OS, Xbox 360, Xbox, GameCube, Wii, PlayStation 3, PlayStation 2, Dreamcast, Nintendo DS, and PSP. See more at [Bink Video](https://en.wikipedia.org/wiki/Bink_Video)'
+category: Video
+description: Bink Video is a proprietary file format (extensions .bik and .bk2) for
+  video developed by RAD Game Tools. It has been primarily used for full-motion video
+  sequences in video games, and has been used in games for Windows, Mac OS, Xbox 360,
+  Xbox, GameCube, Wii, PlayStation 3, PlayStation 2, Dreamcast, Nintendo DS, and PSP.
+  See more at [Bink Video](https://en.wikipedia.org/wiki/Bink_Video)
 title: BIK | BINK
