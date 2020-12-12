@@ -5,8 +5,8 @@ unspecified_category_name: Unspecified                        #Specifies the pla
 # Default Directories & Files
 dir_metadata_fileName : directory.yml                         #Name of the yml file containing the directory meta-data
 output_json_full_file_name : ./meta-files/file-examples.json  #Full Path to JSON File describing the entire directory
-readme_output_directory : ./README.md                    #Full path for the creation of the Readme.md, i.e. The summary of the entire directory
-readme_template_file: ./meta-files/templates/readme-template.md          #The base template for generating the readme
+index_output_directory : ./index.md                           #Full path for the creation of the Readme.md, i.e. The summary of the entire directory
+index_template_file: ./meta-files/templates/readme-template.md          #The base template for generating the readme
 directory_metadata_template_file: ./meta-files/templates/directory.yml  #The template for creating Directory Metadata Files
 file_metadata_template_file: ./meta-files/templates/file.file.yml       #The template for creating File Metadata Files
 

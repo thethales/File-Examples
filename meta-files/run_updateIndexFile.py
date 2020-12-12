@@ -98,7 +98,7 @@ def getDirectoryInfo(dump_to_json_file:bool):
 
 def generateReadme():
 
-    dest = shutil.copyfile(params['readme_template_file'], params['readme_output_directory']) 
+    dest = shutil.copyfile(params['index_template_file'], params['index_output_directory']) 
     directory_listing = getDirectoryInfo(True)
     f = open(dest, "a")
     for category in directory_listing:
