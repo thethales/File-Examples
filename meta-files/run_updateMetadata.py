@@ -13,7 +13,7 @@ params = yaml.load(config_file, Loader=yaml.FullLoader)
 
 def convert_size(size_bytes):
    """
-        Converts a value in bytes to a friendly human readble version
+        Converts a value in bytes to a friendly human readable version
         By James at https://stackoverflow.com/questions/5194057/better-way-to-convert-file-sizes-in-python
    """ 
    if size_bytes == 0:
