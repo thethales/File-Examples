@@ -53,9 +53,10 @@ def generateYMLInfo():
                     metadata_template = yaml.load(open(params['file_metadata_template_file']), Loader=yaml.FullLoader)
                     metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
                 
-                    base_file_path = os.path.join(root,dirs,file.replace('.yml',''))
+                    base_file_path = os.path.join(dirs,file.replace('.yml',''))
+                    full_file_path = os.path.join(root,base_file_path)
                     try:
-                        base_file_size = os.stat(base_file_path).st_size
+                        base_file_size = os.stat(full_file_path).st_size
                     except:
                         base_file_size = 0
 
@@ -75,7 +76,7 @@ def generateYMLInfo():
                             metadata['name'] = os.path.basename(base_file_path)
                         
                         if metadata['link'] == '':
-                            metadata['link'] = "[" + os.path.basename(base_file_path) + "]"+"(" + base_file_path + ")"
+                            metadata['link'] = "[" + os.path.basename(base_file_path) + "]"+"(" + os.path.join(params['file_examples_directory'],base_file_path) + ")"
 
                         metadata['size'] = convert_size(base_file_size)
                         
