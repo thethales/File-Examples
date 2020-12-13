@@ -11,7 +11,7 @@
     <title>File Examples</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="fragment" content="!">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta charset="UTF-8">
     <style type="text/css">
 
@@ -1823,17 +1823,17 @@ if (typeof exports === 'object') {
     }
 
     $.md.ConfigDfd = $.Deferred();
-    $.ajax({url: 'config.json', dataType: 'text'}).done(function(data) {
+    $.ajax({url: 'meta-files/wiki_config.json', dataType: 'text'}).done(function(data) {
         try {
             var data_json = JSON.parse(data);
             $.md.config = $.extend($.md.config, data_json);
-            log.info('Found a valid config.json file, using configuration');
+            log.info('Found a valid wiki_config.json file, using configuration');
         } catch(err) {
-            log.error('config.json was not JSON parsable: ' + err);
+            log.error('wiki_config.json was not JSON parsable: ' + err);
         }
         $.md.ConfigDfd.resolve();
     }).fail(function(err, textStatus) {
-        log.error('unable to retrieve config.json: ' + textStatus);
+        log.error('unable to retrieve wiki_config.json: ' + textStatus);
         $.md.ConfigDfd.reject();
     });
     function registerFetchConfig() {
@@ -1841,12 +1841,12 @@ if (typeof exports === 'object') {
         $.md.stage('init').subscribe(function(done) {
             // TODO 404 won't get cached, requesting it every reload is not good
             // maybe use cookies? or disable re-loading of the page
-            //$.ajax('config.json').done(function(data){
+            //$.ajax('wiki_config.json').done(function(data){
             $.md.ConfigDfd.done(function(){
                 done();
             }).fail(function() {
                 var log = $.md.getLogger();
-                log.info('No config.json found, using default settings');
+                log.info('No wiki_config.json found, using default settings');
                 done();
             });
         });
