@@ -3,6 +3,14 @@ class Markdown:
     line_break = '\n'
 
     @staticmethod
+    def f_reorderDict(dic):
+        ordered_dic={}
+        key_ls=sorted(dic.keys())
+        for key in key_ls:
+            ordered_dic[key]=dic[key]
+        return ordered_dic
+
+    @staticmethod
     def header(level:int,content:str):
         return "".join('#'*level) + Markdown.char_space + content + Markdown.line_break
     
@@ -11,19 +19,11 @@ class Markdown:
         return Markdown.line_break
 
     @staticmethod
-    def orderDic(dic):
-        ordered_dic={}
-        key_ls=sorted(dic.keys())
-        for key in key_ls:
-            ordered_dic[key]=dic[key]
-        return ordered_dic
-
-    @staticmethod
     def tableHeader(arr_json:dict):
         theaders = "|"
         tseparator = "|"
         for item in arr_json:
-            item = Markdown.orderDic(item)
+            item = Markdown.f_reorderDict(item)
             for line in item:
                 theaders += line.title() + '|'
                 tseparator += "----" + '|'
@@ -34,11 +34,17 @@ class Markdown:
     def tableLines(arr_json:dict):
         tlines = ''
         for item in arr_json:
-            item = Markdown.orderDic(item)
+            item = Markdown.f_reorderDict(item)
             for line in item:
-                tlines += '|' + item[line]
+                if line == 'link':
+                    tlines += '|' + Markdown.link(item['name'],item['link'])
+                else:
+                    tlines += '|' + item[line]
             tlines += '|\n'
         return tlines
 
-
+    @staticmethod
+    def link(placeholder:str,link:str):
+        link = "[" + placeholder + "]"+"(" + link + ")"
+        return link
 

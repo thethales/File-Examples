@@ -1,9 +1,13 @@
 # Miscellaneous
 verbose: False                                                #If true signals the script to output every event to console
 unspecified_category_name: Unspecified                        #Specifies the placeholder for those directories whose category key value are missing in the metadata
+enable_gitraw_direct_links: True                              #Replaces the file references with direct links to Github's CDN, instead of the  deafult relative paths   
+github_user: thethales                                        
+github_repo: File-Examples
+
 
 # Default Directories & Files
-file_examples_directory: /file-examples                      #The directory that contais all file examples
+file_examples_directory: /file-examples                       #The directory that contais all file examples
 dir_metadata_fileName : directory.yml                         #Name of the yml file containing the directory meta-data
 output_json_full_file_name : ./meta-files/file-examples.json  #Full Path to JSON File describing the entire directory
 index_output_directory : ./index.md                           #Full path for the creation of the Readme.md, i.e. The summary of the entire directory

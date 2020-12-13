@@ -11,6 +11,21 @@ import collections
 config_file  = open("./meta-files/parameters.yml")
 params = yaml.load(config_file, Loader=yaml.FullLoader)
 
+
+def getGithubRawLink(file_relative_path:str):
+    """
+        Creates a direct download link to github CDN
+        Parameters:
+        file_relative_path - String - The path of the file realtive to the "main" directory
+    """
+    base_url = 'https://raw.githubusercontent.com/'
+    base_url += params['github_user'] + '/'
+    base_url += params['github_repo'] + '/main/'
+    base_url += file_relative_path.replace('\\','/').replace('/','',1)
+
+    return base_url
+
+
 def convert_size(size_bytes):
    """
         Converts a value in bytes to a friendly human readable version
@@ -25,6 +40,9 @@ def convert_size(size_bytes):
    return "%s %s" % (s, size_name[i])
 
 def generateYMLInfo():
+    """
+        Reviews the entire directory folder creating and updating the .yml metadata files
+    """
 
     excludes = params['exclude_directories']
     root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
@@ -75,9 +93,13 @@ def generateYMLInfo():
                         if metadata['name'] == '':
                             metadata['name'] = os.path.basename(base_file_path)
                         
-                        if metadata['link'] == '':
-                            metadata['link'] = "[" + os.path.basename(base_file_path) + "]"+"(" + os.path.join(params['file_examples_directory'],base_file_path) + ")"
-
+                        #if metadata['link'] == '':
+                        
+                        if params['enable_gitraw_direct_links']:
+                            metadata['link'] = getGithubRawLink(os.path.join(params['file_examples_directory'],base_file_path)) #"[" + os.path.basename(base_file_path) + "]"+"(" + getGithubRawLink(os.path.join(params['file_examples_directory'],base_file_path)) + ")"
+                        else:
+                            metadata['link'] = os.path.join(params[''],params['file_examples_directory'],base_file_path) #"[" + os.path.basename(base_file_path) + "]"+"(" + os.path.join(params[''],params['file_examples_directory'],base_file_path) + ")"
+                        
                         metadata['size'] = convert_size(base_file_size)
                         
                         
