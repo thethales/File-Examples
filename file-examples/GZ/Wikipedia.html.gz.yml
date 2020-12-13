@@ -1,5 +1,5 @@
 description: A gzip archive of the HTML version of the page Wikipedia.org
-link: '[Wikipedia.html.gz](/file-examples\GZ\Wikipedia.html.gz)'
+link: https://raw.githubusercontent.com/thethales/File-Examples/main/file-examples/GZ/Wikipedia.html.gz
 name: Wikipedia.html.gz
 size: 56.4 KB
 version: ''
