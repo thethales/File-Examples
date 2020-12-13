@@ -1981,12 +1981,12 @@ if (typeof exports === 'object') {
             currentHashString === '#'||
             currentHashString === '#!')
         {
-            newHashString = '#!index.md';
+            newHashString = '#!file_index.md';
         }
         else if (currentHashString.startsWith ('#!') &&
                  currentHashString.endsWith('/')
                 ) {
-            newHashString = currentHashString + 'index.md';
+            newHashString = currentHashString + 'file_index.md';
         }
         if (newHashString)
             window.location.hash = newHashString;
@@ -3096,7 +3096,7 @@ if (typeof exports === 'object') {
 		var filename = window.location.hash;
 
 		if (filename.length === 0) {
-            filename = '#!index.md';
+            filename = '#!file_index.md';
         }
 		var selector = 'li:has(a[href="' + filename + '"])';
 		$('#md-menu').find (selector).addClass ('active');
