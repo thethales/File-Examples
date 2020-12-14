@@ -5,6 +5,7 @@ import shutil
 import math
 import collections
 
+import configparser
 
 
 #Script Local Parameters
@@ -12,18 +13,32 @@ config_file  = open("./meta-files/parameters.yml")
 params = yaml.load(config_file, Loader=yaml.FullLoader)
 
 
-def getGithubRawLink(file_relative_path:str):
-    """
-        Creates a direct download link to github CDN
-        Parameters:
-        file_relative_path - String - The path of the file realtive to the "main" directory
-    """
-    base_url = 'https://raw.githubusercontent.com/'
-    base_url += params['github_user'] + '/'
-    base_url += params['github_repo'] + '/main/'
-    base_url += file_relative_path.replace('\\','/').replace('/','',1)
+def getKeysFromInfFile(inf_file_path:str):
+    try:
+        config = configparser.ConfigParser()
+        config.read(inf_file_path)
+        return config
+    except:
+        return []
+    
+    
 
-    return base_url
+def getRawLink(file_relative_path:str,generate_github_rawlink:bool):
+    """
+        Creates a direct download link to github CDN or a relative path 
+        Parameters:
+            file_relative_path - String - The path of the file realtive to the "main" directory
+            generate_github_rawlink - Bool - When True, forces the output of the Github CDN URL for the file
+    """
+    if(generate_github_rawlink):
+        base_url = 'https://raw.githubusercontent.com/'
+        base_url += params['github_user'] + '/'
+        base_url += params['github_repo'] + '/main/'
+        base_url += file_relative_path.replace('\\','/').replace('/','',1)
+        return base_url
+    else:
+        path = os.path.join(params['file_examples_directory'],file_relative_path)
+        return os.path.normpath(path)
 
 
 def convert_size(size_bytes):
@@ -73,6 +88,7 @@ def generateYMLInfo():
                 
                     base_file_path = os.path.join(dirs,file.replace('.yml',''))
                     full_file_path = os.path.join(root,base_file_path)
+                    
                     try:
                         base_file_size = os.stat(full_file_path).st_size
                     except:
@@ -93,16 +109,17 @@ def generateYMLInfo():
                         if metadata['name'] == '':
                             metadata['name'] = os.path.basename(base_file_path)
                         
-                        #if metadata['link'] == '':
-                        
-                        if params['enable_gitraw_direct_links']:
-                            metadata['link'] = getGithubRawLink(os.path.join(params['file_examples_directory'],base_file_path)) #"[" + os.path.basename(base_file_path) + "]"+"(" + getGithubRawLink(os.path.join(params['file_examples_directory'],base_file_path)) + ")"
+
+                        #Sets the link as URL from shortcut or as RAW Link from repository
+                        if full_file_path.endswith(".url"):
+                            arr_ini = getKeysFromInfFile(full_file_path)
+                            metadata['link'] = arr_ini['InternetShortcut']['URL']
+                            metadata['size'] = params['placeholders']['unknown_file_size_warning']
                         else:
-                            metadata['link'] = os.path.join(params[''],params['file_examples_directory'],base_file_path) #"[" + os.path.basename(base_file_path) + "]"+"(" + os.path.join(params[''],params['file_examples_directory'],base_file_path) + ")"
-                        
-                        metadata['size'] = convert_size(base_file_size)
-                        
-                        
+                            metadata['link'] = getRawLink(base_file_path,params['enable_gitraw_direct_links'])
+                            metadata['size'] = convert_size(base_file_size)
+              
+                        #Saves changes
                         yaml.safe_dump(metadata, metadata_yml_file)
 
                 #Reviews the metadata file adding missing keys for the directory.yml metadata file
