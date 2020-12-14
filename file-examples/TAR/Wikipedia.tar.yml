@@ -1,6 +1,6 @@
 description: 'A tar archive containing two files: the HTML versions of the Wikipedia.org
   and the page www.isitchristmas.com'
-link: https://raw.githubusercontent.com/thethales/File-Examples/main/TARWikipedia.tar
+link: https:\raw.githubusercontent.com\thethales\File-Examples\main\file-examplesTARWikipedia.tar
 name: Wikipedia.tar
 size: 168.0 KB
 version: ''
