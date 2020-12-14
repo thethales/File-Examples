@@ -34,9 +34,9 @@ def getRawLink(file_relative_path:str,generate_github_rawlink:bool):
         base_url = 'https://raw.githubusercontent.com/'
         base_url += params['github_user'] + '/'
         base_url += params['github_repo'] + '/main/'
-        base_url += params['file_examples_directory']
-        base_url += file_relative_path.replace('\\','/').replace('/','',1)
-        return os.path.normpath(base_url)
+        base_url += params['file_examples_directory'] + '/'
+        base_url += file_relative_path.replace('\\','/')
+        return base_url
     else:
         path = os.path.join(params['file_examples_directory'],file_relative_path)
         return os.path.normpath(path)
