@@ -34,8 +34,9 @@ def getRawLink(file_relative_path:str,generate_github_rawlink:bool):
         base_url = 'https://raw.githubusercontent.com/'
         base_url += params['github_user'] + '/'
         base_url += params['github_repo'] + '/main/'
+        base_url += params['file_examples_directory']
         base_url += file_relative_path.replace('\\','/').replace('/','',1)
-        return base_url
+        return os.path.normpath(base_url)
     else:
         path = os.path.join(params['file_examples_directory'],file_relative_path)
         return os.path.normpath(path)
@@ -59,7 +60,7 @@ def generateYMLInfo():
         Reviews the entire directory folder creating and updating the .yml metadata files
     """
 
-    excludes = params['exclude_directories']
+    excludes = params['file_examples_exclude_directories']
     root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     root += params['file_examples_directory']
 
@@ -110,8 +111,8 @@ def generateYMLInfo():
                             metadata['name'] = os.path.basename(base_file_path)
                         
 
-                        #Sets the link as URL from shortcut or as RAW Link from repository
-                        if full_file_path.endswith(".url"):
+                        #Verifies if the files is a URL shortcut
+                        if full_file_path.endswith(".url") and dirs not in params['shortcut_exclude_directories']:
                             arr_ini = getKeysFromInfFile(full_file_path)
                             metadata['link'] = arr_ini['InternetShortcut']['URL']
                             metadata['size'] = params['placeholders']['unknown_file_size_warning']
