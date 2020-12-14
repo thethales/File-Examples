@@ -105,7 +105,7 @@ def generateReadme():
     f = open(dest, "a")
     for category in directory_listing:
         f.write(Markdown.lineBreak())
-        category_header = category if (category != '') else params['unspecified_category_name']
+        category_header = category if (category != '') else params['placeholders']['unspecified_category_name']
         f.write(Markdown.header(1, category_header ))
         f.write(Markdown.lineBreak())
 
