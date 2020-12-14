@@ -1,0 +1,5 @@
+category: 'Shortcut'
+description: 'A URL file is a shortcut file referenced by web browsers. 
+It contains a web URL and may also store a reference to the favicon.ico icon file, which is displayed as the icon for the shortcut file.
+Creting an ```.url``` file on Windows is quite simple, simply drag the URL address from your browser window onto your desktop. ( On a Mac, that action will create a ```webloc```file).'
+title: URL

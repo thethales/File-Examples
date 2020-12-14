@@ -27,4 +27,10 @@ The resulting _summary_ of files is presented [here](/index.md). For the specifi
 - [Index of Example Files JSON](./meta-files/file-examples.json) in JSON format
 - As an experimental webpage: https://thethales.github.io/File-Examples/
 
+# Roadmap
+
+- Reenable support for external links for files
+- Update Visuals
+- Query JSON for specific file types
+
 

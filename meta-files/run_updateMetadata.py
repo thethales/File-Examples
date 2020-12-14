@@ -61,7 +61,7 @@ def generateYMLInfo():
                 
                 #Create file.file.yml if not found
                 if not file.endswith(".yml") and file != os.path.basename(params['dir_metadata_fileName']) :
-                    metadata_file_path = os.path.join(root,dirs,file+'.yml')
+                    metadata_file_path = os.path.abspath(os.path.join(root,dirs,file+'.yml'))
                     if not os.path.isfile(metadata_file_path):
                         shutil.copyfile(params['file_metadata_template_file'], metadata_file_path) 
                 
