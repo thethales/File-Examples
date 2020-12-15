@@ -5,18 +5,21 @@ github_user: thethales
 github_repo: File-Examples
 
 #Names
-placeholders:
+placeholders:                                                   #Describes the placeholders names troughout the project
   unspecified_category_name: Unspecified                        #Specifies the placeholder for those directories whose category key value are missing in the metadata
   unknown_file_size_warning: Unavailable                        #Specifies the placeholder for the Size property of the files indexed, when acquiring the size file is infeasible
+
+json_output:                                                        
+  output_path : ./meta-files/file-examples.json                     #Full Path to JSON File describing the entire directory  
+  pretty_print_path : ./meta-files/file-examples-pretty-print.json  #Full Path to formatted JSON File describing the entire directory
 
 # Default Directories & Files
 file_examples_directory: /file-examples                       #The directory that contais all file examples
 dir_metadata_fileName : directory.yml                         #Name of the yml file containing the directory meta-data
-output_json_full_file_name : ./meta-files/file-examples.json  #Full Path to JSON File describing the entire directory
-index_output_directory : ./index.md                           #Full path for the creation of the Readme.md, i.e. The summary of the entire directory
-index_template_file: ./meta-files/templates/readme-template.md          #The base template for generating the readme
-directory_metadata_template_file: ./meta-files/templates/directory.yml  #The template for creating Directory Metadata Files
-file_metadata_template_file: ./meta-files/templates/file.file.yml       #The template for creating File Metadata Files
+index_output_directory : ./index.md                                       #Full path for the creation of the Readme.md, i.e. The summary of the entire directory
+index_template_file: ./meta-files/templates/readme-template.md            #The base template for generating the readme
+directory_metadata_template_file: ./meta-files/templates/directory.yml    #The template for creating Directory Metadata Files
+file_metadata_template_file: ./meta-files/templates/file.file.yml         #The template for creating File Metadata Files
 
 # Metadata
 file_examples_exclude_directories:                                     #List of Directories that should be ignored while looking for file examples

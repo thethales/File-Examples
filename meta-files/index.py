@@ -11,19 +11,25 @@ from markdown import Markdown
 #Script Local Parameters
 params = common.getLocalParameters()
 
-def exportJsonToFile(file_contents:str):
+def exportJsonToFile(json_object:dict):
     """
     Creates a files at the default Output location, see the ´params´ for fullpath
     
     Parameters
     ----------
-        file_contents : str
-            Contents of the file
+        json_object : dict
+            JSON Object
 
     """
-    f = open(params['output_json_full_file_name'], "w")
-    f.write(file_contents)
+    
+    f = open(params['json_output']['output_path'], "w")
+    f.write(json.dumps(json_object))
     f.close
+
+    if params['json_output']['pretty_print_path'] != '':
+        f = open(params['json_output']['pretty_print_path'] , "w")
+        f.write(json.dumps(json_object,indent=4, sort_keys=True))
+        f.close
 
 
 
@@ -35,7 +41,7 @@ def getDirectoryInfo(dump_to_json_file:bool):
     Parameters
     ----------
         dump_to_json_file : bool
-            If True, this function will also dump the 
+            If True, this function will also dump the computed information into a default json file
 
     Returns
     -------
@@ -93,7 +99,8 @@ def getDirectoryInfo(dump_to_json_file:bool):
                 "file_examples": temp_listOfFiles
             })
     if dump_to_json_file:            
-        exportJsonToFile(json.dumps(json_content))
+        exportJsonToFile(json_content)
+
     return json_content
 
 
