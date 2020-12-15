@@ -1,5 +1,5 @@
 # Miscellaneous
-verbose: False                                                #If true signals the script to output every event to console
+verbose: True                                                 #If true signals the script to output every event to console
 enable_gitraw_direct_links: True                              #Replaces the file references with direct links to Github's CDN, instead of the  deafult relative paths   
 github_user: thethales                                        
 github_repo: File-Examples

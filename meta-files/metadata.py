@@ -7,11 +7,10 @@ import collections
 
 import configparser
 
+import common
 
 #Script Local Parameters
-config_file  = open("./meta-files/parameters.yml")
-params = yaml.load(config_file, Loader=yaml.FullLoader)
-
+params = common.getLocalParameters()
 
 def getKeysFromInfFile(inf_file_path:str):
     try:
@@ -21,8 +20,6 @@ def getKeysFromInfFile(inf_file_path:str):
     except:
         return []
     
-    
-
 def getRawLink(file_relative_path:str,generate_github_rawlink:bool):
     """
         Creates a direct download link to github CDN or a relative path 
@@ -55,9 +52,9 @@ def convert_size(size_bytes):
    s = round(size_bytes / p, 2)
    return "%s %s" % (s, size_name[i])
 
-def generateYMLInfo():
+def generateYMLInfoFiles():
     """
-        Reviews the entire directory folder creating and updating the .yml metadata files
+        Reviews the entire directory creating and updating the .yml metadata files
     """
 
     excludes = params['file_examples_exclude_directories']
@@ -101,13 +98,15 @@ def generateYMLInfo():
                         if not metadata:
                             metadata = metadata_template
                             yaml.safe_dump(metadata, metadata_yml_file)
+                            metadata_yml_file = open(metadata_file_path,'w')
                         else:
                             if item_template not in metadata:
                                 metadata[item_template] = ""
                                 yaml.safe_dump(metadata, metadata_yml_file)
                                 metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
                             
-                        if metadata['name'] == '':
+                        
+                        if metadata['name'] == "":
                             metadata['name'] = os.path.basename(base_file_path)
                         
 
@@ -135,22 +134,15 @@ def generateYMLInfo():
                         if not metadata:
                             metadata = metadata_template
                             yaml.safe_dump(metadata, metadata_yml_file)
+                            metadata_yml_file = open(metadata_file_path,'w')
                         else:
                             if item_template not in metadata:
                                 metadata[item_template] = ""
                                 yaml.safe_dump(metadata, metadata_yml_file)
                                 metadata = yaml.load(open(metadata_file_path), Loader=yaml.FullLoader)
 
-
                         if metadata['title'] == '':
                             dir_name = metadata_file_path.split('\\')[-2]
                             metadata['title'] = dir_name
 
                         yaml.safe_dump(metadata, metadata_yml_file)
-
-def main():
-    generateYMLInfo()
-
-
-if __name__ == "__main__":  
-    main()

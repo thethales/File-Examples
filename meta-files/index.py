@@ -2,14 +2,14 @@ import os
 import yaml
 import json
 import shutil 
+import common
 
 from collections import OrderedDict
 
 from markdown import Markdown
 
 #Script Local Parameters
-config_file  = open("./meta-files/parameters.yml")
-params = yaml.load(config_file, Loader=yaml.FullLoader)
+params = common.getLocalParameters()
 
 def exportJsonToFile(file_contents:str):
     """
@@ -54,8 +54,7 @@ def getDirectoryInfo(dump_to_json_file:bool):
             try:
                 yml_file = open(os.path.join(root,directory,params['dir_metadata_fileName']))
             except:
-                if params['verbose']:
-                    print(directory + ' - ' + 'directory lacks configuration file, skipping ...')
+                common.print_verbose(directory + ' - ' + 'directory lacks configuration file, skipping ...')
                 continue
 
             info = yaml.load(yml_file, Loader=yaml.FullLoader)
@@ -98,7 +97,10 @@ def getDirectoryInfo(dump_to_json_file:bool):
     return json_content
 
 
-def generateReadme():
+def buildIndex():
+    """
+        Rebuilds the File Examples human readable index (index.md) with theproject JSON file specified at the parameters file (parameters.yml)
+    """
 
     dest = shutil.copyfile(params['index_template_file'], params['index_output_directory']) 
     directory_listing = getDirectoryInfo(True)
@@ -119,12 +121,5 @@ def generateReadme():
             f.write(Markdown.tableHeader(item['file_examples']))
             f.write(Markdown.tableLines(item['file_examples']))
     f.close()
+
     return
-
-
-def main():
-    generateReadme()
-    
-
-if __name__ == "__main__":
-    main()
