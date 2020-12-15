@@ -1,0 +1,12 @@
+category: Programming Languages
+description: '```Makefile.am``` is a programmer-defined file and is used by ```automake```
+  to generate the Makefile.in file (the .am stands for automake). ```GNU Automake```
+  is a tool for automatically generating Makefile.in files compliant with the GNU
+  Coding Standards ([See more](https://www.gnu.org/software/automake/)). This software
+  is part of [Autoconf](https://www.gnu.org/software/autoconf/autoconf.html) wich
+  is an extensible package of M4 macros that produce shell scripts to automatically
+  configure software source code packages. These scripts can adapt the packages to
+  many kinds of UNIX-like systems without manual user intervention. Autoconf creates
+  a configuration script for a package from a template file that lists the operating
+  system features that the package can use, in the form of M4 macro calls.'
+title: MAKEFILE | AM
