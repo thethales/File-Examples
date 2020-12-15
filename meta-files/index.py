@@ -115,12 +115,12 @@ def buildIndex():
     for category in directory_listing:
         f.write(Markdown.lineBreak())
         category_header = category if (category != '') else params['placeholders']['unspecified_category_name']
-        f.write(Markdown.header(1, category_header ))
+        f.write(Markdown.header(2, category_header ))
         f.write(Markdown.lineBreak())
 
         for item in directory_listing[category]:
             f.write(Markdown.lineBreak())
-            f.write(Markdown.header(2,item['filetype']))
+            f.write(Markdown.header(3,item['filetype']))
             f.write(Markdown.lineBreak())
             f.write(item['description'])
             f.write(Markdown.lineBreak())
