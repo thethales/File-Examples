@@ -15,6 +15,31 @@
     <meta charset="UTF-8">
     <style type="text/css">
 
+
+
+
+    #search_menu_input{
+        border: 1px #CCC solid;
+        border-radius: 5px;
+        height: 32px;
+        width: calc(100% - 29px)
+    }
+
+    #search_menu_input:active{
+        border: 2px #CCC solid;
+    }
+
+
+    .searchbox{
+        margin-bottom: 10px;
+    }
+
+    .search-icon{
+        vertical-align: middle;
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+
     .identH2{
         margin-left: 12px;
     }
@@ -98,7 +123,16 @@
         font-size: smaller;
         padding: 1em;
     }
+
+    /* Rules for sizing the icon. */
+    .material-icons.md-18 { font-size: 18px; }
+    .material-icons.md-24 { font-size: 24px; }
+    .material-icons.md-36 { font-size: 36px; }
+    .material-icons.md-48 { font-size: 48px; }
     </style>
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- START extlib/css/highlight.github.css -->
 <style id="style:extlib/css/highlight.github.css">pre code{display:block;padding:.5em;color:#333;background:#f8f8ff}pre .comment,pre .template_comment,pre .diff .header,pre .javadoc{color:#998;font-style:italic}pre .keyword,pre .css .rule .keyword,pre .winutils,pre .javascript .title,pre .nginx .title,pre .subst,pre .request,pre .status{color:#333;font-weight:bold}pre .number,pre .hexcolor,pre .ruby .constant{color:#099}pre .string,pre .tag .value,pre .phpdoc,pre .tex .formula{color:#d14}pre .title,pre .id{color:#900;font-weight:bold}pre .javascript .title,pre .lisp .title,pre .clojure .title,pre .subst{font-weight:normal}pre .class .title,pre .haskell .type,pre .vhdl .literal,pre .tex .command{color:#458;font-weight:bold}pre .tag,pre .tag .title,pre .rules .property,pre .django .tag .keyword{color:#000080;font-weight:normal}pre .attribute,pre .variable,pre .lisp .body{color:#008080}pre .regexp{color:#009926}pre .class{color:#458;font-weight:bold}pre .symbol,pre .ruby .symbol .string,pre .lisp .keyword,pre .tex .special,pre .prompt{color:#990073}pre .built_in,pre .lisp .title,pre .clojure .built_in{color:#0086b3}pre .preprocessor,pre .pi,pre .doctype,pre .shebang,pre .cdata{color:#999;font-weight:bold}pre .deletion{background:#fdd}pre .addition{background:#dfd}pre .diff .change{background:#0086b3}pre .chunk{color:#aaa}</style><!-- END extlib/css/highlight.github.css -->
@@ -3017,7 +3051,8 @@ if (typeof exports === 'object') {
         affixDiv.css('top', top_spacing);
         //affix.css('top','-250px');
 
-        var $pannel = $('<div class="panel panel-default"><ul class="list-group"/></div>');
+        var $pannel = $('<div class="searchbox"><i class="material-icons md-32 search-icon">search</i><input id="search_menu_input" type="text" placeholder="Filter List"></div><div class="panel panel-default"><ul id="menu_list" class="list-group"/></div>');
+
         var $ul = $pannel.find("ul");
         affixDiv.append($pannel);
 
@@ -3065,6 +3100,14 @@ if (typeof exports === 'object') {
 
         //menu.css('width','100%');
         $('#md-left-column').append(affixDiv);
+        
+        //#custom
+        $("#search_menu_input").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#menu_list li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
 
     }
 
@@ -4288,6 +4331,13 @@ function googlemapsReady() {
 </script>
 <!-- END dist/MDwiki.js -->
 <script type="text/javascript">$.md.logThreshold = $.md.loglevel.DEBUG;</script>
+
+<!-- #custom-->
+  
+<script>
+
+</script>
+  
 </head>
 <body>
     <noscript>
