@@ -22,7 +22,7 @@ The ```directory.yml``` file, describes the folder metadata and contains ilustra
 
 The ```index.md``` file is dynamically built by a Python [script](./meta-files/run.py), that amalgamates every metadata file into a single document. While updating or creating the _metadata .yml files_ themselves (when needed).
 
-The resulting _summary_  of files is presented [here](/index.md). For the specific inner workings consult the [docs section](./meta-files/docs/general_information.md), where everything is describe in detail.
+The resulting _summary_  of files is presented [here](/index.md). For the specific inner workings consult the [docs section](./meta-files/docs/introduction.md), where everything is describe in detail.
 
 # The Index
 
