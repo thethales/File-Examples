@@ -145,6 +145,13 @@
             "description": "```.ini``` files are used by applications and the Windows operating system for storing initialization parameters. The information is stored in associative arrays, with a key and a value, as such: ``` [section] name=value ; comment text ```",
             "file_examples": [
                 {
+                    "description": "The application information file for the portable version of CPU-Z, [distributed by PortableApps.com](https://portableapps.com/apps/utilities/cpu-z-portable)",
+                    "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/appinfo.ini",
+                    "name": "appinfo.ini",
+                    "size": "463.0 B",
+                    "version": ""
+                },
+                {
                     "description": "PortableApps Installer license.ini",
                     "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/license.ini",
                     "name": "license.ini",
@@ -388,6 +395,21 @@
                 }
             ],
             "filetype": "PNG"
+        }
+    ],
+    "Programming Language": [
+        {
+            "description": "``C``` is the default extension for the [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language). These are text files, that later are compiled into machine code by the C compiler.",
+            "file_examples": [
+                {
+                    "description": "[HTTrack](https://www.httrack.com/) library example .c file, distributed under the GNU General Public License, Copyright (C) Xavier Roche and other contributors ",
+                    "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/C/example.c",
+                    "name": "example.c",
+                    "size": "7.65 KB",
+                    "version": ""
+                }
+            ],
+            "filetype": "C"
         }
     ],
     "Programming Languages": [

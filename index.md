@@ -122,6 +122,17 @@ X3D is a royalty-free ISO/IEC standard for declaratively representing 3D compute
 |----|----|----|----|----|
 |A simple file containing the default blender objet, _the cube_, exported on Blender 2.92|[cube.x3d](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/X3D/cube.x3d)|cube.x3d|3.59 KB||
 
+## Programming Language
+
+
+### C
+
+``C``` is the default extension for the [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language). These are text files, that later are compiled into machine code by the C compiler.
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+|[HTTrack](https://www.httrack.com/) library example .c file, distributed under the GNU General Public License, Copyright (C) Xavier Roche and other contributors |[example.c](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/C/example.c)|example.c|7.65 KB||
+
 ## Documents
 
 
@@ -210,6 +221,7 @@ A _text-file_ is one  of the most simple file structures, is structured as a seq
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
+|The application information file for the portable version of CPU-Z, [distributed by PortableApps.com](https://portableapps.com/apps/utilities/cpu-z-portable)|[appinfo.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/appinfo.ini)|appinfo.ini|463.0 B||
 |PortableApps Installer license.ini|[license.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/license.ini)|license.ini|44.0 B||
 ||[setup.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/setup.ini)|setup.ini|358.0 B||
 ||[windows-desktop.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/windows-desktop.ini)|windows-desktop.ini|249.0 B||
