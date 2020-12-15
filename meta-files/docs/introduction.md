@@ -1,4 +1,4 @@
-# The Indexer
+# First Steps - The Indexer
 
 This project is somewhat automated, all file samples are indexed for easy of access. 
 
@@ -26,7 +26,7 @@ This method, adds good atomicity allowing for a good plasticity in the way the f
     - ``` Note: The aforementioned folder is customizable and definied as a parameter at the parameters file: [parameters.yml]```
 
 2. Add your files to the folder. 
-    - If the file is to be hosted in an external repository have a look a the [External URLs support](./meta-files/docs/general_information.md#External URLs support) section. There you will be instructed to replace your file with a link in text format.
+    - If the file is to be hosted in an external repository have a look a the [External URLs support](./meta-files/docs/introduction.md#External URLs support) section. There you will be instructed to replace your file with a link in text format.
 3. Run the script ```run.py```. The script will create all the necessary metada files and prepend known info.
 4. Fill in the blanks. Add complementary metadata to the ```.yml``` files avaliable.
     
@@ -36,26 +36,18 @@ This method, adds good atomicity allowing for a good plasticity in the way the f
 
 To keep the repository within [Github's healthy size limits](https://github.community/t/working-with-large-files-and-repositories/10203) the use of external realiable links is encouraged for anything bigger than 5MB.
 
-For that, the ```Indexer``` supports the usage of ```.url``` [shortcuts](https://en.wikipedia.org/wiki/Shortcut_(computing)), wich are simple text files containing keys poiting to a web address.
+For that, the ```Indexer``` supports the usage of ```.url``` [shortcuts](https://en.wikipedia.org/wiki/Shortcut_(computing)), wich are simple text files containing keys pointing to a web address.
 
-How they work:
-
-```
-A URL file is a shortcut file referenced by web browsers. It contains
-a web URL and may also store a reference to the favicon.ico icon file, which is
-displayed as the icon for the shortcut file. Creting an ```.url``` file on Windows
-is quite simple, simply drag the URL address from your browser window onto your
+Hint: A URL file is a shortcut file referenced by web browsers. It contains a web URL and may also store a reference to the favicon.ico icon file, which is displayed as the icon for the shortcut file. Creting an ```.url``` file on Windows is quite simple, simply drag the URL address from your browser window onto your
 desktop.
+
+The shortcut file structure is pretty simple, and a template is avaliable [here](./meta-files/templates/sample.url)
+
 ```
-
-The file structure is pretty simple, and a template is avaliable [here](./meta-files/templates/sample.url)
-
-```inf
-
 [InternetShortcut]
 URL=https://www.google.com
-
 ```
 
-Once a file with the specified ```.url``` extension is located, the indexer will try to read and place the link as the destination for the file.
-Currently the validation of size is unavaliable for those occurrences.
+Once a file with the specified ```.url``` extension is located, the indexer will try to read and place the link inside the file as the destination for the file, instead of it's location on the repository
+
+Note: Currently the validation of size is unavaliable for those occurrences.
