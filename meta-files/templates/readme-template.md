@@ -5,7 +5,7 @@
 ![Files Examples Horizontal](meta-files/img/FilesExamplesLogoAlternative.png)
 
 
-Note: This is the file index contatining the complete dataset of file examples.
+Note: This is the file index containing the complete dataset of file examples.
 The dataset is also avaliable as a JSON file [here](./meta-files/file-examples.json)
 
 # Index of File Examples
