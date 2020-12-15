@@ -51,6 +51,10 @@
     .bold{
         font-weight: bold;
     }
+
+    .navbar-brand{
+        padding-top: 0px !important;
+    }
     /* hide the main content while we assemble everything */
     .md-hidden-load { display: none; }
 
@@ -3100,7 +3104,7 @@ if (typeof exports === 'object') {
 
         //menu.css('width','100%');
         $('#md-left-column').append(affixDiv);
-        
+
         //#custom
         $("#search_menu_input").on("keyup", function() {
             var value = $(this).val().toLowerCase();
