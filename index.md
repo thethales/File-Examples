@@ -87,7 +87,7 @@ ZIP is an archive file format that supports lossless data compression. A ZIP fil
 
 ### C
 
-``C``` is the default extension for the [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language). These are text files, that later are compiled into machine code by the C compiler.
+```C``` is the default extension for the [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language). These are text files, that later are compiled into machine code by the C compiler.
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
@@ -99,7 +99,7 @@ ZIP is an archive file format that supports lossless data compression. A ZIP fil
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-||[PHP-OptionSelect.php](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PHP/PHP-OptionSelect.php)|PHP-OptionSelect.php|327.0 B||
+|A simple PHP file that outputs a option box|[PHP-OptionSelect.php](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PHP/PHP-OptionSelect.php)|PHP-OptionSelect.php|327.0 B||
 
 ## Video
 
@@ -110,7 +110,7 @@ Bink Video is a proprietary file format (extensions .bik and .bk2) for video dev
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-||[Sierra_Logo.bik](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/BIK/Sierra_Logo.bik)|Sierra_Logo.bik|3.91 MB||
+|The Sierra Trademark presentation from a classic 2000's CD-ROM|[Sierra_Logo.bik](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/BIK/Sierra_Logo.bik)|Sierra_Logo.bik|3.91 MB||
 
 ### MP4
 
@@ -118,7 +118,7 @@ MPEG-4 Part 14 or MP4 is a digital multimedia container format most commonly use
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-||[Nextcloud intro.mp4](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/MP4/Nextcloud intro.mp4)|Nextcloud intro.mp4|3.78 MB||
+|The sample introduction video from the [Nextcloud](https://nextcloud.com/) opensource platform]|[Nextcloud intro.mp4](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/MP4/Nextcloud intro.mp4)|Nextcloud intro.mp4|3.78 MB||
 
 ## 3D Modeling
 
@@ -239,8 +239,16 @@ A _text-file_ is one  of the most simple file structures, is structured as a seq
 |----|----|----|----|----|
 |The application information file for the portable version of CPU-Z, [distributed by PortableApps.com](https://portableapps.com/apps/utilities/cpu-z-portable)|[appinfo.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/appinfo.ini)|appinfo.ini|463.0 B||
 |PortableApps Installer license.ini|[license.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/license.ini)|license.ini|44.0 B||
-||[setup.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/setup.ini)|setup.ini|358.0 B||
-||[windows-desktop.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/windows-desktop.ini)|windows-desktop.ini|249.0 B||
+|A [Install Shield](https://en.wikipedia.org/wiki/InstallShield) setup file from the LS-USBMX 1/2/3 Steering Wheel W/Vibration driver CD-ROM|[setup.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/setup.ini)|setup.ini|358.0 B||
+|A windows ```.ini``` file used by the OS to store information about the arrangement of a Windows folder.|[windows-desktop.ini](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/windows-desktop.ini)|windows-desktop.ini|249.0 B||
+
+### PP3 | RawTherapee
+
+The ```.pp3```file is a text file of associative arrays used to store what edits you made to your photo on the [RawTherapee](https://rawtherapee.com/) photo editor
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+|A Sample file generatd on [RawTherapee](https://rawtherapee.com/) version 5.8|[IMG_8181.CR2.pp3](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PP3/IMG_8181.CR2.pp3)|IMG_8181.CR2.pp3|12.17 KB|346|
 
 ## Images
 
@@ -266,17 +274,6 @@ The Portable Network Graphics [PNG](https://en.wikipedia.org/wiki/Portable_Netwo
 |----|----|----|----|----|
 |Blank PNG Color Black, Size: 1920x1080|[PNG_Black_1920x1080.png](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PNG/PNG_Black_1920x1080.png)|PNG_Black_1920x1080.png|381.0 B||
 |Blank PNG Color White, Size: 1920x1080|[PNG_Blank_White_1920x1080.png](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PNG/PNG_Blank_White_1920x1080.png)|PNG_Blank_White_1920x1080.png|381.0 B||
-
-## Unspecified
-
-
-### PP3
-
-
-
-|Description|Link|Name|Size|Version|
-|----|----|----|----|----|
-||[IMG_8181.CR2.pp3](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PP3/IMG_8181.CR2.pp3)|IMG_8181.CR2.pp3|12.17 KB||
 
 ## Shortcut
 

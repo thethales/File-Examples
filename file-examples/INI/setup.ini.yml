@@ -1,4 +1,5 @@
-description: ''
+description: A [Install Shield](https://en.wikipedia.org/wiki/InstallShield) setup
+  file from the LS-USBMX 1/2/3 Steering Wheel W/Vibration driver CD-ROM
 link: https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/setup.ini
 name: setup.ini
 size: 358.0 B

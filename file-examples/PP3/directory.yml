@@ -1,3 +1,5 @@
-category: 'Configuration Files'
-description: 'The ```.pp3```file is a text file of associative arrays used to store what edits you made to your photo on the [RawTherapee](https://rawtherapee.com/) photo editor'
-title: PP3 | RawTherapee 
+category: Configuration Files
+description: The ```.pp3```file is a text file of associative arrays used to store
+  what edits you made to your photo on the [RawTherapee](https://rawtherapee.com/)
+  photo editor
+title: PP3 | RawTherapee

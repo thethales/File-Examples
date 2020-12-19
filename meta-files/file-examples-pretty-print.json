@@ -1,19 +1,4 @@
 {
-    "": [
-        {
-            "description": "",
-            "file_examples": [
-                {
-                    "description": "",
-                    "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PP3/IMG_8181.CR2.pp3",
-                    "name": "IMG_8181.CR2.pp3",
-                    "size": "12.17 KB",
-                    "version": ""
-                }
-            ],
-            "filetype": "PP3"
-        }
-    ],
     "3D Modeling": [
         {
             "description": "```.blend``` is the dafult file system for [Blender](https://www.blender.org/) and can pack multiple scenes into a single file. The best place to find blender sample files is at [blender.org/download/demo-files/](https://www.blender.org/download/demo-files/) though they are offered in ```.zip``` containers. Below some independent samples are listed.",
@@ -174,14 +159,14 @@
                     "version": ""
                 },
                 {
-                    "description": "",
+                    "description": "A [Install Shield](https://en.wikipedia.org/wiki/InstallShield) setup file from the LS-USBMX 1/2/3 Steering Wheel W/Vibration driver CD-ROM",
                     "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/setup.ini",
                     "name": "setup.ini",
                     "size": "358.0 B",
                     "version": ""
                 },
                 {
-                    "description": "",
+                    "description": "A windows ```.ini``` file used by the OS to store information about the arrangement of a Windows folder.",
                     "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/windows-desktop.ini",
                     "name": "windows-desktop.ini",
                     "size": "249.0 B",
@@ -189,6 +174,19 @@
                 }
             ],
             "filetype": "INI"
+        },
+        {
+            "description": "The ```.pp3```file is a text file of associative arrays used to store what edits you made to your photo on the [RawTherapee](https://rawtherapee.com/) photo editor",
+            "file_examples": [
+                {
+                    "description": "A Sample file generatd on [RawTherapee](https://rawtherapee.com/) version 5.8",
+                    "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PP3/IMG_8181.CR2.pp3",
+                    "name": "IMG_8181.CR2.pp3",
+                    "size": "12.17 KB",
+                    "version": "346"
+                }
+            ],
+            "filetype": "PP3 | RawTherapee"
         }
     ],
     "Documents": [
@@ -427,7 +425,7 @@
             "filetype": "MAKEFILE | AM"
         },
         {
-            "description": "``C``` is the default extension for the [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language). These are text files, that later are compiled into machine code by the C compiler.",
+            "description": "```C``` is the default extension for the [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language). These are text files, that later are compiled into machine code by the C compiler.",
             "file_examples": [
                 {
                     "description": "[HTTrack](https://www.httrack.com/) library example .c file, distributed under the GNU General Public License, Copyright (C) Xavier Roche and other contributors ",
@@ -443,7 +441,7 @@
             "description": "",
             "file_examples": [
                 {
-                    "description": "",
+                    "description": "A simple PHP file that outputs a option box",
                     "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PHP/PHP-OptionSelect.php",
                     "name": "PHP-OptionSelect.php",
                     "size": "327.0 B",
@@ -473,7 +471,7 @@
             "description": "Bink Video is a proprietary file format (extensions .bik and .bk2) for video developed by RAD Game Tools. It has been primarily used for full-motion video sequences in video games, and has been used in games for Windows, Mac OS, Xbox 360, Xbox, GameCube, Wii, PlayStation 3, PlayStation 2, Dreamcast, Nintendo DS, and PSP. See more at [Bink Video](https://en.wikipedia.org/wiki/Bink_Video)",
             "file_examples": [
                 {
-                    "description": "",
+                    "description": "The Sierra Trademark presentation from a classic 2000's CD-ROM",
                     "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/BIK/Sierra_Logo.bik",
                     "name": "Sierra_Logo.bik",
                     "size": "3.91 MB",
@@ -486,7 +484,7 @@
             "description": "MPEG-4 Part 14 or MP4 is a digital multimedia container format most commonly used to store video and audio, but it can also be used to store other data such as subtitles and still images. See more [here](https://en.wikipedia.org/wiki/MPEG-4_Part_14)",
             "file_examples": [
                 {
-                    "description": "",
+                    "description": "The sample introduction video from the [Nextcloud](https://nextcloud.com/) opensource platform]",
                     "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/MP4/Nextcloud intro.mp4",
                     "name": "Nextcloud intro.mp4",
                     "size": "3.78 MB",

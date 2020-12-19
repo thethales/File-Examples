@@ -37,6 +37,8 @@ Ways of acessing the index of file examples:
 - ~~Reenable support for external links for files~~ ✔️
 - Update docs
 - Update Visuals
+- Add additional auto retrieval of metadata
+ - E.g. Video and images dimensions, audio lenght .. .etc 
 - Query JSON for specific file types
 - Add Issue Templates
 - Add VirusTotal Hashes

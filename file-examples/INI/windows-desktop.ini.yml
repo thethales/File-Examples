@@ -1,4 +1,5 @@
-description: ''
+description: A windows ```.ini``` file used by the OS to store information about the
+  arrangement of a Windows folder.
 link: https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/INI/windows-desktop.ini
 name: windows-desktop.ini
 size: 249.0 B
