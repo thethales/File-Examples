@@ -289,3 +289,14 @@ A URL file is a shortcut file referenced by web browsers. It contains a web URL 
 |----|----|----|----|----|
 |[PythonUSBWebServer](https://github.com/thethales/PythonUSBWebServer) versioninfo file|[VERSIONINFO_PYTHOUSBWEBSERVER](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/VERSIONINFO/VERSIONINFO_PYTHOUSBWEBSERVER)|VERSIONINFO_PYTHOUSBWEBSERVER|1.41 KB||
 |[Apache Software Foundation SVN](https://subversion.apache.org/) version info file|[VERSIONINFO_SVN](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/VERSIONINFO/VERSIONINFO_SVN)|VERSIONINFO_SVN|1.39 KB||
+
+## XML
+
+
+### XMP | Darktable
+
+```.xmp``` the so-called _sidecars files_, are ```.xml``` files used by [DarkTable](https://www.darktable.org/) a non-destructive image editor, to store information about the images as well as the full editing history without touching the original raw files. For a given source image, multiple editing versions, called duplicates, can co-exist, sharing the same input (raw) data but each having their own metadata, tags and history stack. Each duplicate is represented by a separate XMP sidecar file with a filename constructed in the form _<basename>_nn.<extension>.xmp_, where nn represents the (minimum two-digit) version number of that edit. Information for the initial edit – the _duplicate_ with version number zero – is stored in the sidecar file _<basename>.<extension>.xmp_.
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+|A Blank ```.xmp``` from a ```.cr2``` raw file containing Adobe Color Presets|[IMG_8366.CR2.xmp](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/XMP/IMG_8366.CR2.xmp)|IMG_8366.CR2.xmp|975.0 B||
