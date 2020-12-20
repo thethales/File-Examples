@@ -31,17 +31,17 @@ class Markdown:
         return theaders + '\n' + tseparator + '\n'
 
     @staticmethod
-    def tableLines(arr_json:dict):
-        tlines = ''
-        for item in arr_json:
-            item = Markdown.f_reorderDict(item)
-            for line in item:
-                if line == 'link':
-                    tlines += '|' + Markdown.link(item['name'],item['link'])
+    def tablecells(arr_lines:dict):
+        tcells = ''
+        for column in arr_lines:
+            column = Markdown.f_reorderDict(column)
+            for cell in column:
+                if cell == 'link':
+                    tcells += '|' + Markdown.link(column['name'],column['link'])
                 else:
-                    tlines += '|' + item[line]
-            tlines += '|\n'
-        return tlines
+                    tcells += '|' + column[cell]
+            tcells += '|\n'
+        return tcells
 
     @staticmethod
     def link(placeholder:str,link:str):
