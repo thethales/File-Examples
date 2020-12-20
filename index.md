@@ -32,7 +32,7 @@ Below the files are listed by _category_ and _type/context_.
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-||[WikipediaHomePage.7z](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/7Z/WikipediaHomePage.7z)|WikipediaHomePage.7z|52.47 KB||
+|A ```7z``` archive of the Wikipedia.org homepage HTML file|[WikipediaHomePage.7z](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/7Z/WikipediaHomePage.7z)|WikipediaHomePage.7z|52.47 KB||
 
 ### GZ
 
