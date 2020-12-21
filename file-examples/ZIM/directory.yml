@@ -1,0 +1,9 @@
+category: Archive File Format
+description: "The ZIM file format is an open file format that stores wiki content\
+  \ for offline usage. Its primary focus is the contents of Wikipedia and other Wikimedia\
+  \ projects. The format allows for the compression of articles, features a full-text\
+  \ search index and native category and image handling similar to MediaWiki, and\
+  \ the entire file is easily indexable and readable using a program like Kiwix \xE2\
+  \u20AC\u201C unlike native Wikipedia XML database dumps. ([source](https://en.wikipedia.org/wiki/ZIM_(file_format)))\
+  \  the Kwix open source project offer a collection of ZIM archive [here](https://download.kiwix.org/zim/)"
+title: ZIM

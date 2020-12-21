@@ -66,6 +66,17 @@ This format is used especifically for archiving ```web-crawls```, and is a revis
 |----|----|----|----|----|
 |One page WARC archive of the Wikipedia.org homepage|[WikipediaOrg-20201212031238412.warc](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/WARC/WikipediaOrg-20201212031238412.warc)|WikipediaOrg-20201212031238412.warc|421.33 KB||
 
+### ZIM
+
+The ZIM file format is an open file format that stores wiki content for offline usage. Its primary focus is the contents of Wikipedia and other Wikimedia projects. The format allows for the compression of articles, features a full-text search index and native category and image handling similar to MediaWiki, and the entire file is easily indexable and readable using a program like Kiwix – unlike native Wikipedia XML database dumps. ([source](https://en.wikipedia.org/wiki/ZIM_(file_format)))  the Kwix open source project offer a collection of ZIM archive [here](https://download.kiwix.org/zim/)
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+|A zim archive containing every book from the english Open Source Collection of the Gutenberg Project (hosted by Kiwix)|[gutenberg_en_all_2020-12.zim.url](https://download.kiwix.org/zim/gutenberg/gutenberg_en_all_2020-12.zim)|gutenberg_en_all_2020-12.zim.url|61GB|2020-12|
+|TOP 100 Articles from Wikipedia EN-US zim file, hosted by Kiwix|[wikipedia_en_100_2020-10.zim.url](https://download.kiwix.org/zim/wikipedia/wikipedia_en_100_2020-10.zim)|wikipedia_en_100_2020-10.zim.url|304M|2020-10|
+|Every page and picture from Wikipedia EN-US hosted by Kiwix|[wikipedia_en_all_maxi_2020-11.zim.url](https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_maxi_2020-11.zim)|wikipedia_en_all_maxi_2020-11.zim.url|94GB|2020-11|
+|A zim archive containing every page from Wikipedia EN-US without pictures (hosted by Kiwix)|[wikipedia_en_all_nopic_2020-10.zim.url](https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_nopic_2020-10.zim)|wikipedia_en_all_nopic_2020-10.zim.url|39GB|2020-10|
+
 ### ZIP
 
 ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed.
@@ -217,7 +228,7 @@ A _text-file_ is one  of the most simple file structures, is structured as a seq
 
 |Description|Link|Name|Size|Version|
 |----|----|----|----|----|
-|Ebook Dracula by Bram Stoker hosted on Project Gutenberg, this version contains no images|[Dracula by Bram Stoker(NoImages).url](http://www.gutenberg.org/ebooks/345.kindle.noimages)|Dracula by Bram Stoker(NoImages).url|Unavailable||
+||[Dracula by Bram Stoker(NoImages).url](http://www.gutenberg.org/ebooks/345.kindle.noimages)|Dracula by Bram Stoker(NoImages).url|Unavailable||
 |Ebook Dracula by Bram Stoker hosted on Project Gutenberg|[Dracula by Bram Stoker(WithImages) copy.url](http://www.gutenberg.org/ebooks/345.kindle.images)|Dracula by Bram Stoker(WithImages) copy.url|Unavailable||
 
 ## Configuration Files

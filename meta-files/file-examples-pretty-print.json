@@ -114,6 +114,40 @@
             "filetype": "WARC"
         },
         {
+            "description": "The ZIM file format is an open file format that stores wiki content for offline usage. Its primary focus is the contents of Wikipedia and other Wikimedia projects. The format allows for the compression of articles, features a full-text search index and native category and image handling similar to MediaWiki, and the entire file is easily indexable and readable using a program like Kiwix \u00e2\u20ac\u201c unlike native Wikipedia XML database dumps. ([source](https://en.wikipedia.org/wiki/ZIM_(file_format)))  the Kwix open source project offer a collection of ZIM archive [here](https://download.kiwix.org/zim/)",
+            "file_examples": [
+                {
+                    "description": "A zim archive containing every book from the english Open Source Collection of the Gutenberg Project (hosted by Kiwix)",
+                    "link": "https://download.kiwix.org/zim/gutenberg/gutenberg_en_all_2020-12.zim",
+                    "name": "gutenberg_en_all_2020-12.zim.url",
+                    "size": "61GB",
+                    "version": "2020-12"
+                },
+                {
+                    "description": "TOP 100 Articles from Wikipedia EN-US zim file, hosted by Kiwix",
+                    "link": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_100_2020-10.zim",
+                    "name": "wikipedia_en_100_2020-10.zim.url",
+                    "size": "304M",
+                    "version": "2020-10"
+                },
+                {
+                    "description": "Every page and picture from Wikipedia EN-US hosted by Kiwix",
+                    "link": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_maxi_2020-11.zim",
+                    "name": "wikipedia_en_all_maxi_2020-11.zim.url",
+                    "size": "94GB",
+                    "version": "2020-11"
+                },
+                {
+                    "description": "A zim archive containing every page from Wikipedia EN-US without pictures (hosted by Kiwix)",
+                    "link": "https://download.kiwix.org/zim/wikipedia/wikipedia_en_all_nopic_2020-10.zim",
+                    "name": "wikipedia_en_all_nopic_2020-10.zim.url",
+                    "size": "39GB",
+                    "version": "2020-10"
+                }
+            ],
+            "filetype": "ZIM"
+        },
+        {
             "description": "ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed.",
             "file_examples": [
                 {
@@ -323,7 +357,7 @@
             "description": "```.mobi``` is a container for digital publications on the [Kindle](https://en.wikipedia.org/wiki/Amazon_Kindle) electronicreader ecosystem",
             "file_examples": [
                 {
-                    "description": "Ebook Dracula by Bram Stoker hosted on Project Gutenberg, this version contains no images",
+                    "description": "",
                     "link": "http://www.gutenberg.org/ebooks/345.kindle.noimages",
                     "name": "Dracula by Bram Stoker(NoImages).url",
                     "size": "Unavailable",
