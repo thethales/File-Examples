@@ -31,7 +31,7 @@ class Markdown:
         return theaders + '\n' + tseparator + '\n'
 
     @staticmethod
-    def tablecells(arr_lines:dict):
+    def tableLines(arr_lines:dict):
         tcells = ''
         for column in arr_lines:
             column = Markdown.f_reorderDict(column)
