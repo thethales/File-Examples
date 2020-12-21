@@ -113,8 +113,16 @@ def generateYMLInfoFiles():
                         #Verifies if the files is a URL shortcut
                         if full_file_path.endswith(".url") and dirs not in params['shortcut_exclude_directories']:
                             arr_ini = getKeysFromInfFile(full_file_path)
+                            
+                            
                             metadata['link'] = arr_ini['InternetShortcut']['URL']
-                            metadata['size'] = params['placeholders']['unknown_file_size_warning']
+                            
+                            if 'Metadata' in arr_ini:
+                                metadata['size'] = arr_ini['Metadata']['size']
+                                metadata['version'] = arr_ini['Metadata']['version']
+                                metadata['description'] = arr_ini['Metadata']['description']
+                            else:
+                                metadata['size'] = params['placeholders']['unknown_file_size_warning']
                         else:
                             metadata['link'] = getRawLink(base_file_path,params['enable_gitraw_direct_links'])
                             metadata['size'] = convert_size(base_file_size)
