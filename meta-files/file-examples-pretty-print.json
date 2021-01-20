@@ -1,19 +1,4 @@
 {
-    "": [
-        {
-            "description": "",
-            "file_examples": [
-                {
-                    "description": "",
-                    "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/GEDCOM/Surname Family Tree.ged",
-                    "name": "Surname Family Tree.ged",
-                    "size": "979.0 B",
-                    "version": ""
-                }
-            ],
-            "filetype": "GEDCOM"
-        }
-    ],
     "3D Modeling": [
         {
             "description": "```.blend``` is the dafult file system for [Blender](https://www.blender.org/) and can pack multiple scenes into a single file. The best place to find blender sample files is at [blender.org/download/demo-files/](https://www.blender.org/download/demo-files/) though they are offered in ```.zip``` containers. Below some independent samples are listed.",
@@ -251,6 +236,19 @@
                 }
             ],
             "filetype": "DOC"
+        },
+        {
+            "description": " A plain text file containing genealogical information about individuals, and metadata linking these records together.  This data model is based on the nuclear family and the individual. This contrasts with evidence-based models, where data is structured to reflect the supporting evidence. In the GEDCOM lineage-linked data model, all data is structured to reflect the believed reality, that is, actual (or hypothesized) nuclear families and individuals. [Source](https://en.wikipedia.org/wiki/GEDCOM)",
+            "file_examples": [
+                {
+                    "description": "A Sample file generated on Ancestry.com containing a simple family structure.",
+                    "link": "https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/GEDCOM/Surname Family Tree.ged",
+                    "name": "Surname Family Tree.ged",
+                    "size": "979.0 B",
+                    "version": "5.5"
+                }
+            ],
+            "filetype": "GEDCOM"
         },
         {
             "description": "```.html``` is the extension for Hypertext Markup Language files, wich are the standard markup language for documents designed to be displayed in a web browser. Every web page on the web build based on html",
