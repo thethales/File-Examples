@@ -1,0 +1,3 @@
+category: 'Documents'
+description: ' A plain text file containing genealogical information about individuals, and metadata linking these records together.  This data model is based on the nuclear family and the individual. This contrasts with evidence-based models, where data is structured to reflect the supporting evidence. In the GEDCOM lineage-linked data model, all data is structured to reflect the believed reality, that is, actual (or hypothesized) nuclear families and individuals. [Source](https://en.wikipedia.org/wiki/GEDCOM)' 
+title: GEDCOM
