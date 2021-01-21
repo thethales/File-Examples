@@ -269,6 +269,14 @@ The ```.pp3```file is a text file of associative arrays used to store what edits
 |----|----|----|----|----|
 |A Sample file generatd on [RawTherapee](https://rawtherapee.com/) version 5.8|[IMG_8181.CR2.pp3](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/PP3/IMG_8181.CR2.pp3)|IMG_8181.CR2.pp3|12.17 KB|346|
 
+### TORRENT
+
+A torrent file or meta-info file is a computer file that contains metadata about files and folders to be distributed, and usually also a list of the network locations of trackers, which are computers that help participants in the system find each other and form efficient distribution groups called swarms.[1] A torrent file does not contain the content to be distributed; it only contains information about those files, such as their names, folder structure, and sizes obtained via cryptographic hash values for verifying file integrity. The term torrent may refer either to the metadata file or to the files downloaded, depending on the context. [source](https://en.wikipedia.org/wiki/Torrent_file)
+
+|Description|Link|Name|Size|Version|
+|----|----|----|----|----|
+|A Torrent File of the public domain book: Dracula by Stoker, Bram ; Obtained from the University of Toronto - Robarts Library [Archive.org](https://archive.org/details/draculabr00stokuoft/page/n11/mode/2up) website|[draculabr00stokuoft_archive.torrent](https://raw.githubusercontent.com/thethales/File-Examples/main//file-examples/TORRENT/draculabr00stokuoft_archive.torrent)|draculabr00stokuoft_archive.torrent|30.72 KB||
+
 ## Images
 
 
