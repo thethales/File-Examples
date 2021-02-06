@@ -1,0 +1,5 @@
+category: Configuration Files
+description: '```.mta``` files are index files created by Samsung Allshare and [Samsung
+  Kies](https://en.wikipedia.org/wiki/Samsung_Kies) to enable navigation of video
+  chapters. The file is XML based and contains thumbnails in base64 format'
+title: MTA
